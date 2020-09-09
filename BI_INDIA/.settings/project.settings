@@ -67,7 +67,7 @@
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"C:/Users/mkapustic/workspace/.metadata\"",
+        "value" : "\"C:/Talend/Talend-Studio-20200219_1130-V7.3.1/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -180,7 +180,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "enc:system.encryption.key.v1:Xe77Rr2mUi3mGxwHh7BQhXsSM14/Wo2SdzCwXPfm",
+        "value" : "enc:system.encryption.key.v1:pE4mXlf2Tlk1lqYyLEGTw3n9Glb9OkZsVob0/Odo",
         "contextMode" : false
       }, {
         "show" : true,
@@ -388,7 +388,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS_IMPLICIT_CONTEXT",
-        "value" : "enc:system.encryption.key.v1:b9VkCA+mi1toayhAe1rvDnL9GCRBeADkXWN1bUuV",
+        "value" : "enc:system.encryption.key.v1:+DkklIGeLpZKFjQfYkTlO7kuvIPszYUEQok4x+FW",
         "contextMode" : false
       }, {
         "show" : true,
