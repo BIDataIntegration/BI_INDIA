@@ -14,6 +14,7 @@
     <module>jobs/process/demo_0.1</module>
     <module>jobs/process/demoinformix_0.1</module>
     <module>jobs/process/copy_of_demo_0.1</module>
+    <module>jobs/joblets/jobletfileparser_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
