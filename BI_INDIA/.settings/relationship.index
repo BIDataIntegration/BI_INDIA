@@ -80,6 +80,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_W1G8EPODEeqCHY7Hhtv-PA",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
