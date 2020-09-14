@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<softwaredeployment:TdSoftwareSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010" xmi:id="_Tkn98PZQEeqZk5wqz-ILIg" name="Informix Dynamic Server" subtype="Informix Dynamic Server" version="12.10.FC2"/>
