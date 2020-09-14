@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Dev">
     <contextParameter comment="" name="Symmetrics_Database" prompt="Symmetrics_Database?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_db"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:oQGE9Pt/bXIwAnnQLUIbizgROAY0JATBuqor+NW5RHliNB33Ur0TIOrc"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:uScnwwDIWZBtPDMK1VIQZkQKJjoKsFvcVU/zztfUQaoBUxALHLNpBtbN"/>
     <contextParameter comment="" name="Symmetrics_Port" prompt="Symmetrics_Port?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="1433"/>
     <contextParameter comment="" name="Symmetrics_AdditionalParams" prompt="Symmetrics_AdditionalParams?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value=""/>
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
@@ -11,7 +11,7 @@
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="" name="Symmetrics_Database" prompt="Symmetrics_Database?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_db"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:5NJiHUNQZg0a0NWEvBUqAI66NZ6VgyrUX70tVOcAFRR4qi1o/QYxYwwO"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:lxlw9Vn+Pw0EQYH3roAMxv6o6ECVTZsU1FAnjN7Qb+CwBykIcmNRrpk/"/>
     <contextParameter comment="" name="Symmetrics_Port" prompt="Symmetrics_Port?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="1433"/>
     <contextParameter comment="" name="Symmetrics_AdditionalParams" prompt="Symmetrics_AdditionalParams?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value=""/>
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
@@ -20,7 +20,7 @@
   <context confirmationNeeded="false" name="UAT">
     <contextParameter comment="" name="Symmetrics_Database" prompt="Symmetrics_Database?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_db"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:KwujDGNe4/84I1FbiTQr+KQbPitkalHPANDRDLS/QP+YgNjct2ragZjS"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:NJfU8tT7SS3TsU6A/LxmY26Zx12W5RlLX4r7mYc+K0Uni8UZxoWMgKgZ"/>
     <contextParameter comment="" name="Symmetrics_Port" prompt="Symmetrics_Port?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="1433"/>
     <contextParameter comment="" name="Symmetrics_AdditionalParams" prompt="Symmetrics_AdditionalParams?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value=""/>
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
@@ -33,7 +33,7 @@
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
     <contextParameter comment="" name="Symmetrics_Schema" prompt="Symmetrics_Schema?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="dbo"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:wIrhlucstRnWn6BMAils1dXYc23ToK/TM1Nd+s113Cbhlfp/xYTxiHUI"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:NbRy7T0tQ8fdNxX2EA06r8MggSJqLBatBJd8tp2bWnHSabCpDaNCdzJH"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ROf1iiYrrQgLMEPXp5HDHGrsWDrpw+7LXgq5GV3D"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TqwBqT/tCwBPiWfCekWEZ/NUE2JSQqVk/UmeebGN"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -112,7 +112,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jO8V00IRsvGULdgztcotz+StwVdh8ChGV+wiI8CO"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3ICuWbPyavEoDEsupsgF1lhOJgBj98G00+qNTk50"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -169,7 +169,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Symmetrics_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.Symmetrics_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.Symmetrics_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WhcmbuL0CCCXfh7O30qnGwKh1TMrAQvvtGfuay2OHOfb9OAsusk9cFBnWdkNkTtpapvm9j93cw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:771qwA84r/0ZcLQmgqUohpy+U+gApavSx2J2LrM6Fuu+VvB2ClWI3dTh5TU7YWeR5oRlLs0YGg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.Symmetrics_AdditionalParams"/>
@@ -194,7 +194,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Symmetrics_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.Symmetrics_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.Symmetrics_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+KtdHzLuVPkMUhWkvKxIfQ1du4AiWPz3fZvTVgnEn5KDeEdo3xIbGLzF8SZoXg3ALoZP9KrgcQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OYRT2x0JkjgJLY8rbPiYA47vTNE+ppG4u2qmeplgPTGaLi0vGvuaDSuwufE6MZzcers5BWa+YA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -210,19 +210,55 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="_sum_"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_key"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_sum_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acd_src"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="split"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acd"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_login"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_surname"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_firstname"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_department"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_desc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_login"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_surname"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_firstname"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_from_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_to_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latest_flag"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Symmetrics"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" defaultValue="" key="false" length="32" name="_sum_" nullable="true" originalDbColumnName="(sum)" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="32" name="_sum_1" nullable="true" originalDbColumnName="(sum)" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="split" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="agent_key" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="acd_src" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="acd" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="agent_login" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_surname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_firstname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_department" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_title" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_desc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="supervisor_login" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="supervisor_surname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="supervisor_firstname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effective_from_date" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effective_to_date" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="latest_flag" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
@@ -239,20 +275,56 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="_sum_"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_key"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_sum_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acd_src"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="split"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acd"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_login"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_surname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_firstname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_department"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_title"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent_desc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_login"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_surname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supervisor_firstname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_from_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_to_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latest_flag"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" defaultValue="" key="false" length="32" name="_sum_" nullable="true" originalDbColumnName="(sum)" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="32" name="_sum_1" nullable="true" originalDbColumnName="(sum)" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="split" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="agent_key" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="acd_src" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="acd" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="agent_login" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_surname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_firstname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_department" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_title" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="agent_desc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="supervisor_login" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="supervisor_surname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="supervisor_firstname" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effective_from_date" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="effective_to_date" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="latest_flag" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_2">
@@ -296,13 +368,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4386740b-4b38-4a2f-97fe-4f908a9f7909"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>C673XnAskcr4we/eqLtPA3fJzqqi3S997OZV5EeuaJXjvBtBAcb84vcWFPQJP81QHED/K9qZDs9F
-O0Ab/Nv8fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a148fd88-5687-48ff-996c-4270c0b97115"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KTmhx/nVaE3VFbCKUCRhrDVkiErOcBiEvVjaVgLjqHa12qMazC+1GjQAaaXm5ZAWuFuurXKKWWsl
-AmCxcCsO6g==</DigestValue></Reference></SignedInfo><SignatureValue>av2u5iaoFs/Su16DQb4a2SvE4jJKOW10CVHJQy4mFqi0PR18MpARCC3JJDXXkeP86Or8bhpro58J
-W5npqri8GIlMI3MoF0vgmulht16JsqivWj0sXKsh18Pi1Zzu8eIESMnBBUm/JbT0cRl1PssHKt62
-aaf5Xu+SK+OVJTnqAr+2h4iENXCo9K4fzbzT5ZUsm2TA5TPudLK0V6PsAz17tOD/rqVK7wc3VLXA
-IJiCu3NaS8G0/lwAEPTPetkFXucXYQiNKvz7gLfTpFTzCjTBVWtlRih0WUWBif5c7U9UkH3RQYUt
-+HEskFMZGIf3/SjoLyM5WTvryNRRswiP1Qv9IQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_004fb2e2-0334-485d-9f30-1fd39a750c48"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n1i0dE9Zfu+eKpHYx2SpZdc43l8B5Rv6ftOnpEVlqwOUhssR2+yRtnjaggPzxVtMV0mg++I8y8/y
+IW7jlwkeoA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2ec74746-df96-4273-b1b9-1971506c23a8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8Fm4Zl36A1jcT4Ug+OARskCMNjKh+g72YvLDpI/ON15DgJmJ9us3z2wLZBdOLGMdDbOJczb9WrtR
+KGv3Qt/h1Q==</DigestValue></Reference></SignedInfo><SignatureValue>A8ZSponBZLPNGopXrPX9Opiw4OHuB4/c8T/hN1H1C4x6esJw9fQOoDmV2QhlzDBKodroqE35wwFG
+Vx4rYnSFFx5N6DECGF8GBl5NVKsd5FlgK8XjTGndODlW+1BXvBxYJIK8WIE0ubjWxXj+SA7r/+gx
+Leo6BELiqd6U7YD/1YsoVrGkbJeO4W2w4QMxjQjxfUpvZt9ZsheChUoGckPVoiKO9iD4rAJuFtR/
+Suyv8OvYWkP1cGs+PBxkC/mO5nN0QMboelnmE0H2lbrCCBpRfzNG+E98pKhpdC4zZyHoLZ4F9K/D
+hAaVR4agCNTD2DEjwpd2PsBFXWj6rckruFhVdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -324,4 +396,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a148fd88-5687-48ff-996c-4270c0b97115" Target="#_4386740b-4b38-4a2f-97fe-4f908a9f7909"><Timestamp>2020-09-14 00:57:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2ec74746-df96-4273-b1b9-1971506c23a8" Target="#_004fb2e2-0334-485d-9f30-1fd39a750c48"><Timestamp>2020-09-14 01:01:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
