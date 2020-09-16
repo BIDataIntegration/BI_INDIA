@@ -218,6 +218,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_1Zdt8PevEeq6RK9ifm88uQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
@@ -277,6 +281,10 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_1Zdt8PevEeq6RK9ifm88uQ - AssignedException",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
