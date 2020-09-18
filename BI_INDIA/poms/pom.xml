@@ -20,6 +20,10 @@
     <module>jobs/process/demosymmetrics_0.1</module>
     <module>jobs/process/testing_0.1</module>
     <module>jobs/process/informixcloudtest_0.1</module>
+    <module>jobs/process/master_tracker_fileload_3.0</module>
+    <module>jobs/process/demo/onboardingdemojob_0.1</module>
+    <module>jobs/process/filetmapfile_0.1</module>
+    <module>jobs/process/test1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
