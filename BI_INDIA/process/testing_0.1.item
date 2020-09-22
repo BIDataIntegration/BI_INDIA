@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:H1MubrHcF+POMAhseRPlYVRYFHPSyGo0wGhqSJpG"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mwUiuFwS1ikw7+Ey4faKAj+OYGFsDQsGDZ1oIw+5"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bQ9/iMi+Sv6g7WQfau87T2nWPyyVympL8TS4Hm+X"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:T3LdSm5psRMooBa79RKmNnaJI09m9395j7z+mW4B"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -230,7 +230,7 @@
         <mapperTableEntries expression="row1.Exception" name="Exception" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Date" name="Date" nullable="true" type="id_Date"/>
       </outputTables>
-      <outputTables activateExpressionFilter="true" expressionFilter="row1.Last_Name.equals(&quot;&quot;)" name="rejects" sizeState="INTERMEDIATE">
+      <outputTables activateExpressionFilter="true" expressionFilter="row1.Last_Name.equals(&quot;&quot;) || row1.Last_Name.equals(&quot;Total&quot;)" name="rejects" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Last_Name " name="Last_Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.First_Name " name="First_Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Agent_ID " name="Agent_ID" nullable="true" type="id_String"/>
@@ -284,17 +284,17 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Last_Name"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -335,13 +335,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18aab8fd-81ff-4ca4-87ce-cf70b398ba5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Hz5Q8J1VU6dLLJA3PIiEvE3bGdzeM6ljLnmjK8NskhjeFUfNUB84iP9BcyXTqX6bjCVpHUXsmgIa
-cavMDRjpNQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_47540d3f-6847-48ca-912c-b757a7ed9bdc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X9VrgPdvEnW8Wwdiy1uOOWwLQbuRXJ4pXn9asgfjQtUjVrNL1nq0SaxIloTGLPtbOWp5vEWBP1rO
-oEFHE1WM4g==</DigestValue></Reference></SignedInfo><SignatureValue>fQoynSpfuxIrPGy61A299+ZVtKtubpCojMJgVtSPWgGmvaYP4UAr8m8dc7dBXaDhkMfnniM0XMYZ
-mAEWWY2EoI/4Ijjkr+dVu+DUFnw5EXmr3MI9ZfmpyM62E//Fkid1kQxjBWdyDZm8RiVDB+pCh1h/
-mk+TTtTPtP4fMTe8g5YExQsmor9fx2rvAbIBmEIwX2EGfmwAGi58fDhu4qHYabspJj69OK2R/GR/
-weKONMAyV2DyoHNbtA99WOB8QpJPDgjRmI6yILfw80HaGGfgcK6c6TlovBPxHbTTej+nf75g0W3z
-VP7IVrWncPXK+OHy0QnmgBCAzEyOCjAG5gl1gQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_39c6a393-e0b9-41a7-a545-e257fb56c194"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>09/7BCX2hMQNLKwQ50wOw2oK1jH7ymfsGBvGGfm1eO9Dk6PHa/Q/6pCjq5dUEDpGD2aF3VeQ4Zzj
+eAxcJUL8xw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cd948c9e-bf3c-4388-b209-30b186785dfa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pq603CYbWCQJzXRbr5DcRA2d3HBwgaJ3cQ7gButCQUVigV6atOqFloqMzeu9K+dN/J/PsUGJAq7h
+I/U6QjZIXg==</DigestValue></Reference></SignedInfo><SignatureValue>hfWzT0IegxwjRBgLbkMjQUbWi9rlYhR0H69/P+MU1vTk9xkpP/nPK1NmzJFcPEViBuVGVIwLZ1CB
+g9rXS80rEywOg8TLzusXx+8a/RT9ibh/ebQcbYhyuJ7hYGPQ9mlmDeNcje3AN4Msec1tI7u9I/T0
+p1tKIlLFLNAI4+zPZ5NMDMy/KfDRqcxRYIFpG+76LEFE+QWwpj/TODkKbzEuMvlx1fqPlKtgX5/X
+pyXRK4w8zT/D46mg4ZpC/Gr6MeQmUF5SBYxAZ+GBjdEIJBNNqY8WTwOLYuh0+znJEBHDIs6NGhER
+3yP1R7PbEfSHOeA3WKlvdUl2OVF6XE2xvAlyrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -363,4 +363,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_47540d3f-6847-48ca-912c-b757a7ed9bdc" Target="#_18aab8fd-81ff-4ca4-87ce-cf70b398ba5f"><Timestamp>2020-09-22 19:15:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cd948c9e-bf3c-4388-b209-30b186785dfa" Target="#_39c6a393-e0b9-41a7-a545-e257fb56c194"><Timestamp>2020-09-22 19:34:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
