@@ -24,7 +24,6 @@
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/filetmapfile_0.1</module>
     <module>jobs/process/test1_0.1</module>
-    <module>jobs/process/throwaway_0.1</module>
     <module>jobs/process/oracletest_0.1</module>
     <module>jobs/process/thowaway_0.1</module>
   </modules>
