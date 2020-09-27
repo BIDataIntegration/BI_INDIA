@@ -1,17 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_aTi4sADzEeuRE8t99nb0_g" xmi:version="2.0">
-  <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="deetest75" xmi:id="_aTi4sQDzEeuRE8t99nb0_g"/>
-  <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:bQh1d2mP3V5Tyl/dJoQEXFa8nGywNRZanPjpZKqItYsN84Ws" xmi:id="_aTi4sgDzEeuRE8t99nb0_g"/>
-  <contextParameter comment="" name="smtphost" prompt="smtphost?" promptNeeded="false" type="id_String" value="&quot;pop.gmail.com&quot;" xmi:id="_aTi4swDzEeuRE8t99nb0_g"/>
-  <contextParameter comment="" name="smtpport" prompt="smtpport?" promptNeeded="false" type="id_Integer" value="995" xmi:id="_aTi4tADzEeuRE8t99nb0_g"/>
-  <contextParameter comment="" name="directorytostore" prompt="directorytostore?" promptNeeded="false" type="id_String" value="&quot;C:\\deepaktest\\email&quot;" xmi:id="_aTi4tQDzEeuRE8t99nb0_g"/>
-  <contextParameter comment="" name="directorytostoreatt" prompt="directorytostoreatt?" promptNeeded="false" type="id_String" value="C:\deepaktest\emailattachments" xmi:id="_aTi4tgDzEeuRE8t99nb0_g"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_734acb51-b390-4eb3-be9d-0f7814ed9c20"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3UPC0e/B0Zkb9JFBbqJUgnsmqL7RYp2kAnvjnjKfNmC2X2fty4/jOPmYyegqiFoaA1Lm7sYkftbX
-wIao7gUhfQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d78007b2-6079-48d7-8ff9-694494478d8b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A+8i6vhZ3hygpsgGJ+2tv5s4xcquJg+/B6+sQr6QuvT9E2f+AmsGnvRWltNKRoOGS1pRPOYNUWBj
-hFqu369llQ==</DigestValue></Reference></SignedInfo><SignatureValue>NxqUDVBqZjnadXeiWZhSaF1mGPayq0dk4pWdrf0I1nG4UDe6NsgNttFm4ATjYTHCBGZH+B7DKcc7
-Bp2E+Nb/5RFXiGxigIFMA+k4+kYMVMLvR7TwgcuZOGkH/ovmHRmdra64tD3CllSNHMRsqnr1Imx6
-cTtdNfDZJdI7//kTtP46GjC6iq3lwYtqqscvg+gdICHh6NWouDBmnmMAPBkSo5ALPdU3EBNGvw4R
-/2XmSW+Ajjd3XyV3MXBW4m0B3gLBF6VxReZEXkWsn1pMkcmhsETyMunOny2fCwNW9BveezZMjnSi
-u1nChFcThhUpC46M+TVwFwVwLc1xMbEVlvdbgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_aTi4sADzEeuRE8t99nb0_g">
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="deetest75" xmi:id="_aTi4sQDzEeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:KBBm7pMzgWLGeIYx3N/ClwCvDDPsWVFbjAB+iQFCwGMyCHaR" xmi:id="_aTi4sgDzEeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="smtphost" prompt="smtphost?" promptNeeded="false" type="id_String" value="&quot;pop.gmail.com&quot;" xmi:id="_aTi4swDzEeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="smtpport" prompt="smtpport?" promptNeeded="false" type="id_Integer" value="995" xmi:id="_aTi4tADzEeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="directorytostore" prompt="directorytostore?" promptNeeded="false" type="id_String" value="&quot;C:\\deepaktest\\email&quot;" xmi:id="_aTi4tQDzEeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="directorytostoreatt" prompt="directorytostoreatt?" promptNeeded="false" type="id_String" value="C:\deepaktest\emailattachments" xmi:id="_aTi4tgDzEeuRE8t99nb0_g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_Fk-F8AD1EeuRE8t99nb0_g">
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="michael.kapustic@sequentialtech.com" xmi:id="_Fk-F8QD1EeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:/Fhh0cfkEC9MnjKHfG8v1LZ87lSdAjaVD86eBTsx7U2ev/r2IvEsygwLaZ8=" xmi:id="_Fk-F8gD1EeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="smtphost" prompt="smtphost?" promptNeeded="false" type="id_String" value="&quot;outlook.office365.com&quot;" xmi:id="_Fk-F8wD1EeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="smtpport" prompt="smtpport?" promptNeeded="false" type="id_Integer" value="995" xmi:id="_Fk-F9AD1EeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="directorytostore" prompt="directorytostore?" promptNeeded="false" type="id_String" value="&quot;C:\\Users\\mkapustic\\OneDrive - Sequential Technology International\\Talend\\email&quot;" xmi:id="_Fk-F9QD1EeuRE8t99nb0_g"/>
+    <contextParameter comment="" name="directorytostoreatt" prompt="directorytostoreatt?" promptNeeded="false" type="id_String" value="&quot;C:\\Users\\mkapustic\\OneDrive - Sequential Technology International\\Talend\\emailattachments&quot;" xmi:id="_Fk-F9gD1EeuRE8t99nb0_g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d59b5208-27cc-4b43-be8d-2faa24bf31b4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>567eRL9Ti7pmJMDoAzLZG5NKnkNnzoIZONIcmfgGPhEfLaoSd65M8coOnWvaqOWxkk2z63ujOD3/
+jD0Qba9FYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5273ef81-25b1-4b88-8e15-e5df68644b49"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cQYQxJK0SB/f+mGut0hrs2jynAzFCQOzK8cB6t2QT00TAxWq3//Pto3KQcIWGnpOoSSrtaLQF13L
+DeXagQNPzw==</DigestValue></Reference></SignedInfo><SignatureValue>oOuBEu3n+gNesHMsIqt6vLcKWe46qjxq2f3NjXuM1zVr7uNAr47jiuij1i+24ZrUPwIs83U9q3DC
+FST4Exc+Bp4cJA1s4WBkHyBEaycgNyH6eowYOEGA19r3Q052+Ld0vPHbdADNA6ZVyCQJ/zx5BIl1
+icpKlT2Ldg+j+9j4DwRdeWfcuDrYTcqSapiMDI1Pmk0t0PGRSvMXoX0BvF4r+3ZGfdZ7oApL1mVC
+gSwcYCY3JPiuAZu1nFu6Ncn4xIWM/OvyfLEnknFdx1BZy720XLJuLiKMQIAHOEkb+7r06qJSIqYE
+65mpJ/Ydx5JqOufdlPvRxJCArNJbsL6z1eq+DQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -33,4 +43,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d78007b2-6079-48d7-8ff9-694494478d8b" Target="#_734acb51-b390-4eb3-be9d-0f7814ed9c20"><Timestamp>2020-09-27 18:58:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5273ef81-25b1-4b88-8e15-e5df68644b49" Target="#_d59b5208-27cc-4b43-be8d-2faa24bf31b4"><Timestamp>2020-09-27 19:10:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
