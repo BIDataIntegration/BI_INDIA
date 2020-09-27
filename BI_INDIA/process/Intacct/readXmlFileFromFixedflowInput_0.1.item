@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="customerxml" prompt="customerxml?" promptNeeded="false" repositoryContextId="_maFxoP2vEeqDLvhhiPQ3zg" type="id_String" value="&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;request&gt;&lt;control&gt;&lt;senderid&gt;STILLC&lt;/senderid&gt;&lt;password&gt;Sti__11152018&lt;/password&gt;&lt;controlid&gt;'23-Aug-19 07.20.43'&lt;/controlid&gt;&lt;uniqueid&gt;false&lt;/uniqueid&gt; &lt;dtdversion&gt;3.0&lt;/dtdversion&gt;&lt;includewhitespace&gt;false&lt;/includewhitespace&gt; &lt;/control&gt; &lt;operation&gt; &lt;authentication&gt; &lt;login&gt; &lt;userid&gt;Ramakrishna.N&lt;/userid&gt; &lt;companyid&gt;STILLC-sandbox&lt;/companyid&gt; &lt;password&gt;Sti@09876&lt;/password&gt; &lt;locationid&gt;E200&lt;/locationid&gt; &lt;/login&gt; &lt;/authentication&gt; &lt;content&gt; &lt;function controlid=\&quot;testFunctionId\&quot;&gt; &lt;readByQuery&gt; &lt;object&gt;CUSTOMER&lt;/object&gt; &lt;fields&gt;*&lt;/fields&gt; &lt;query&gt;&lt;/query&gt; &lt;pagesize&gt;100&lt;/pagesize&gt; &lt;/readByQuery&gt; &lt;/function&gt; &lt;/content&gt; &lt;/operation&gt; &lt;/request&gt;&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Dm4jBxjZPjtYumRejmK/siHXtH+Pypo8noNbgLY7"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OtdWZs0hhaLAEEBstKcRaQJicpRalv4FWmHvy0ky"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_OwspgPKuEeqwTPBYyrfkMw" name="DQTechnical"/>
+    <routinesParameter id="_OvrV0PKuEeqwTPBYyrfkMw" name="DataMasking"/>
+    <routinesParameter id="_OsCL8PKuEeqwTPBYyrfkMw" name="DataOperation"/>
+    <routinesParameter id="_OwHasPKuEeqwTPBYyrfkMw" name="DataQualityDependencies"/>
+    <routinesParameter id="_Ov5YQPKuEeqwTPBYyrfkMw" name="DataQuality"/>
+    <routinesParameter id="_OwdY8PKuEeqwTPBYyrfkMw" name="DqStringHandling"/>
+    <routinesParameter id="_OtngUPKuEeqwTPBYyrfkMw" name="Mathematical"/>
+    <routinesParameter id="_Ot4mEPKuEeqwTPBYyrfkMw" name="Numeric"/>
+    <routinesParameter id="_OuEMQPKuEeqwTPBYyrfkMw" name="Relational"/>
+    <routinesParameter id="_OvfIkPKuEeqwTPBYyrfkMw" name="SQLike"/>
+    <routinesParameter id="_OuQZgPKuEeqwTPBYyrfkMw" name="StringHandling"/>
+    <routinesParameter id="_OudN0PKuEeqwTPBYyrfkMw" name="TalendDataGenerator"/>
+    <routinesParameter id="_OurQQPKuEeqwTPBYyrfkMw" name="TalendDate"/>
+    <routinesParameter id="_OvOC0PKuEeqwTPBYyrfkMw" name="TalendStringUtil"/>
+    <routinesParameter id="_Ou-yQPKuEeqwTPBYyrfkMw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="context.customerxml"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
+    <elementParameter field="TABLE" name="MANUALTABLE">
+      <elementValue elementRef="INPUT_COLUMN" value="body"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="body"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://api.intacct.com/ia/xml/xmlgw.phtml&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:NgZGv31PZ3MqTfwtC/FPlFOOlUUD5LRad5cERRM+o8YiwWo86nU="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" show="false" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:zlRkS0MHwHOeurbzQ3G+Nz8FwvbEIBSwirZ/ylSp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="1073741823" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="1073741823" name="body" nullable="true" originalLength="1073741823" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractXMLField_1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="body"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/response/operation/result/data&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value="500"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" show="false" value="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_1">
+      <column comment="" key="false" length="1073741823" name="body" nullable="true" originalLength="1073741823" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="1073741823" name="body" nullable="true" originalLength="1073741823" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="1073741823" name="body" nullable="true" originalLength="1073741823" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="customer">
+      <column comment="" key="false" length="10" name="RECORDNO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="CUSTOMER_NAME" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CONTACTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COMPANYNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PREFIX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_FIRSTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_LASTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_INITIAL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PRINTAS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CITY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ZIP" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRYCODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TERMNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONETIME" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONHOLD" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENMODIFIED" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENCREATED" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes expression="" name="body" type="id_Document" xpath="row2/body">
+          <children main="true" name="data" type="id_String" xpath="row2.body:/data">
+            <children name="count" nodeType="ATTRIBUT" type="id_Integer" xpath="row2.body:/data/@count"/>
+            <children name="listtype" nodeType="ATTRIBUT" type="id_String" xpath="row2.body:/data/@listtype"/>
+            <children name="numremaining" nodeType="ATTRIBUT" type="id_Integer" xpath="row2.body:/data/@numremaining"/>
+            <children name="resultId" nodeType="ATTRIBUT" type="id_String" xpath="row2.body:/data/@resultId"/>
+            <children name="totalcount" nodeType="ATTRIBUT" type="id_Integer" xpath="row2.body:/data/@totalcount"/>
+            <children loop="true" main="true" name="customer" type="id_String" xpath="row2.body:/data/customer">
+              <children name="RECORDNO" outgoingConnections="//@node.7/@nodeData/@connections.0" type="id_String" xpath="row2.body:/data/customer/RECORDNO"/>
+              <children name="CUSTOMERID" outgoingConnections="//@node.7/@nodeData/@connections.1" type="id_String" xpath="row2.body:/data/customer/CUSTOMERID"/>
+              <children name="NAME" outgoingConnections="//@node.7/@nodeData/@connections.2" type="id_String" xpath="row2.body:/data/customer/NAME"/>
+              <children name="ENTITY" type="id_String" xpath="row2.body:/data/customer/ENTITY"/>
+              <children name="PARENTKEY" type="id_String" xpath="row2.body:/data/customer/PARENTKEY"/>
+              <children name="PARENTID" type="id_String" xpath="row2.body:/data/customer/PARENTID"/>
+              <children name="PARENTNAME" type="id_String" xpath="row2.body:/data/customer/PARENTNAME"/>
+              <children name="DISPLAYCONTACT.CONTACTNAME" outgoingConnections="//@node.7/@nodeData/@connections.3" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.CONTACTNAME"/>
+              <children name="DISPLAYCONTACT.COMPANYNAME" outgoingConnections="//@node.7/@nodeData/@connections.4" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.COMPANYNAME"/>
+              <children name="DISPLAYCONTACT.PREFIX" outgoingConnections="//@node.7/@nodeData/@connections.5" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.PREFIX"/>
+              <children name="DISPLAYCONTACT.FIRSTNAME" outgoingConnections="//@node.7/@nodeData/@connections.6" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.FIRSTNAME"/>
+              <children name="DISPLAYCONTACT.LASTNAME" outgoingConnections="//@node.7/@nodeData/@connections.7" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.LASTNAME"/>
+              <children name="DISPLAYCONTACT.INITIAL" outgoingConnections="//@node.7/@nodeData/@connections.8" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.INITIAL"/>
+              <children name="DISPLAYCONTACT.PRINTAS" outgoingConnections="//@node.7/@nodeData/@connections.9" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.PRINTAS"/>
+              <children name="DISPLAYCONTACT.TAXABLE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXABLE"/>
+              <children name="DISPLAYCONTACT.TAXGROUP" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXGROUP"/>
+              <children name="DISPLAYCONTACT.TAXID" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXID"/>
+              <children name="DISPLAYCONTACT.PHONE1" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.PHONE1"/>
+              <children name="DISPLAYCONTACT.PHONE2" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.PHONE2"/>
+              <children name="DISPLAYCONTACT.CELLPHONE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.CELLPHONE"/>
+              <children name="DISPLAYCONTACT.PAGER" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.PAGER"/>
+              <children name="DISPLAYCONTACT.FAX" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.FAX"/>
+              <children name="DISPLAYCONTACT.TAXIDVALIDATIONDATE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXIDVALIDATIONDATE"/>
+              <children name="DISPLAYCONTACT.TAXCOMPANYNAME" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXCOMPANYNAME"/>
+              <children name="DISPLAYCONTACT.TAXADDRESS" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.TAXADDRESS"/>
+              <children name="DISPLAYCONTACT.EMAIL1" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.EMAIL1"/>
+              <children name="DISPLAYCONTACT.EMAIL2" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.EMAIL2"/>
+              <children name="DISPLAYCONTACT.URL1" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.URL1"/>
+              <children name="DISPLAYCONTACT.URL2" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.URL2"/>
+              <children name="DISPLAYCONTACT.VISIBLE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.VISIBLE"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.ADDRESS1" outgoingConnections="//@node.7/@nodeData/@connections.10" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ADDRESS1"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.ADDRESS2" outgoingConnections="//@node.7/@nodeData/@connections.11" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ADDRESS2"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.CITY" outgoingConnections="//@node.7/@nodeData/@connections.12" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.CITY"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.STATE" outgoingConnections="//@node.7/@nodeData/@connections.13" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.STATE"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.ZIP" outgoingConnections="//@node.7/@nodeData/@connections.14" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ZIP"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.COUNTRY" outgoingConnections="//@node.7/@nodeData/@connections.15" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.COUNTRY"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.COUNTRYCODE" outgoingConnections="//@node.7/@nodeData/@connections.16" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.COUNTRYCODE"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.LATITUDE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.LATITUDE"/>
+              <children name="DISPLAYCONTACT.MAILADDRESS.LONGITUDE" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.LONGITUDE"/>
+              <children name="DISPLAYCONTACT.STATUS" outgoingConnections="//@node.7/@nodeData/@connections.17" type="id_String" xpath="row2.body:/data/customer/DISPLAYCONTACT.STATUS"/>
+              <children name="TERMNAME" outgoingConnections="//@node.7/@nodeData/@connections.18" type="id_String" xpath="row2.body:/data/customer/TERMNAME"/>
+              <children name="TERMVALUE" type="id_String" xpath="row2.body:/data/customer/TERMVALUE"/>
+              <children name="CUSTREPID" type="id_String" xpath="row2.body:/data/customer/CUSTREPID"/>
+              <children name="CUSTREPNAME" type="id_String" xpath="row2.body:/data/customer/CUSTREPNAME"/>
+              <children name="RESALENO" type="id_String" xpath="row2.body:/data/customer/RESALENO"/>
+              <children name="TAXID" type="id_String" xpath="row2.body:/data/customer/TAXID"/>
+              <children name="CREDITLIMIT" type="id_String" xpath="row2.body:/data/customer/CREDITLIMIT"/>
+              <children name="TOTALDUE" type="id_String" xpath="row2.body:/data/customer/TOTALDUE"/>
+              <children name="COMMENTS" type="id_String" xpath="row2.body:/data/customer/COMMENTS"/>
+              <children name="ACCOUNTLABEL" type="id_String" xpath="row2.body:/data/customer/ACCOUNTLABEL"/>
+              <children name="ARACCOUNT" type="id_String" xpath="row2.body:/data/customer/ARACCOUNT"/>
+              <children name="ARACCOUNTTITLE" type="id_String" xpath="row2.body:/data/customer/ARACCOUNTTITLE"/>
+              <children name="LAST_INVOICEDATE" type="id_String" xpath="row2.body:/data/customer/LAST_INVOICEDATE"/>
+              <children name="LAST_STATEMENTDATE" type="id_String" xpath="row2.body:/data/customer/LAST_STATEMENTDATE"/>
+              <children name="DELIVERY_OPTIONS" type="id_String" xpath="row2.body:/data/customer/DELIVERY_OPTIONS"/>
+              <children name="TERRITORYID" type="id_String" xpath="row2.body:/data/customer/TERRITORYID"/>
+              <children name="SHIPPINGMETHOD" type="id_String" xpath="row2.body:/data/customer/SHIPPINGMETHOD"/>
+              <children name="CUSTTYPE" type="id_String" xpath="row2.body:/data/customer/CUSTTYPE"/>
+              <children name="GLGRPKEY" type="id_String" xpath="row2.body:/data/customer/GLGRPKEY"/>
+              <children name="GLGROUP" type="id_String" xpath="row2.body:/data/customer/GLGROUP"/>
+              <children name="PRICESCHEDULE" type="id_String" xpath="row2.body:/data/customer/PRICESCHEDULE"/>
+              <children name="DISCOUNT" type="id_String" xpath="row2.body:/data/customer/DISCOUNT"/>
+              <children name="PRICELIST" type="id_String" xpath="row2.body:/data/customer/PRICELIST"/>
+              <children name="VSOEPRICELIST" type="id_String" xpath="row2.body:/data/customer/VSOEPRICELIST"/>
+              <children name="CURRENCY" type="id_String" xpath="row2.body:/data/customer/CURRENCY"/>
+              <children name="CONTACTINFO.CONTACTNAME" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.CONTACTNAME"/>
+              <children name="CONTACTINFO.PREFIX" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.PREFIX"/>
+              <children name="CONTACTINFO.FIRSTNAME" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.FIRSTNAME"/>
+              <children name="CONTACTINFO.INITIAL" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.INITIAL"/>
+              <children name="CONTACTINFO.LASTNAME" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.LASTNAME"/>
+              <children name="CONTACTINFO.COMPANYNAME" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.COMPANYNAME"/>
+              <children name="CONTACTINFO.PRINTAS" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.PRINTAS"/>
+              <children name="CONTACTINFO.PHONE1" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.PHONE1"/>
+              <children name="CONTACTINFO.PHONE2" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.PHONE2"/>
+              <children name="CONTACTINFO.CELLPHONE" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.CELLPHONE"/>
+              <children name="CONTACTINFO.PAGER" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.PAGER"/>
+              <children name="CONTACTINFO.FAX" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.FAX"/>
+              <children name="CONTACTINFO.EMAIL1" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.EMAIL1"/>
+              <children name="CONTACTINFO.EMAIL2" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.EMAIL2"/>
+              <children name="CONTACTINFO.URL1" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.URL1"/>
+              <children name="CONTACTINFO.URL2" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.URL2"/>
+              <children name="CONTACTINFO.VISIBLE" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.VISIBLE"/>
+              <children name="CONTACTINFO.MAILADDRESS.ADDRESS1" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.ADDRESS1"/>
+              <children name="CONTACTINFO.MAILADDRESS.ADDRESS2" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.ADDRESS2"/>
+              <children name="CONTACTINFO.MAILADDRESS.CITY" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.CITY"/>
+              <children name="CONTACTINFO.MAILADDRESS.STATE" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.STATE"/>
+              <children name="CONTACTINFO.MAILADDRESS.ZIP" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.ZIP"/>
+              <children name="CONTACTINFO.MAILADDRESS.COUNTRY" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.COUNTRY"/>
+              <children name="CONTACTINFO.MAILADDRESS.COUNTRYCODE" type="id_String" xpath="row2.body:/data/customer/CONTACTINFO.MAILADDRESS.COUNTRYCODE"/>
+              <children name="SHIPTO.CONTACTNAME" type="id_String" xpath="row2.body:/data/customer/SHIPTO.CONTACTNAME"/>
+              <children name="SHIPTO.PREFIX" type="id_String" xpath="row2.body:/data/customer/SHIPTO.PREFIX"/>
+              <children name="SHIPTO.FIRSTNAME" type="id_String" xpath="row2.body:/data/customer/SHIPTO.FIRSTNAME"/>
+              <children name="SHIPTO.INITIAL" type="id_String" xpath="row2.body:/data/customer/SHIPTO.INITIAL"/>
+              <children name="SHIPTO.LASTNAME" type="id_String" xpath="row2.body:/data/customer/SHIPTO.LASTNAME"/>
+              <children name="SHIPTO.COMPANYNAME" type="id_String" xpath="row2.body:/data/customer/SHIPTO.COMPANYNAME"/>
+              <children name="SHIPTO.PRINTAS" type="id_String" xpath="row2.body:/data/customer/SHIPTO.PRINTAS"/>
+              <children name="SHIPTO.TAXABLE" type="id_String" xpath="row2.body:/data/customer/SHIPTO.TAXABLE"/>
+              <children name="SHIPTO.TAXGROUP" type="id_String" xpath="row2.body:/data/customer/SHIPTO.TAXGROUP"/>
+              <children name="SHIPTO.TAXID" type="id_String" xpath="row2.body:/data/customer/SHIPTO.TAXID"/>
+              <children name="SHIPTO.PHONE1" type="id_String" xpath="row2.body:/data/customer/SHIPTO.PHONE1"/>
+              <children name="SHIPTO.PHONE2" type="id_String" xpath="row2.body:/data/customer/SHIPTO.PHONE2"/>
+              <children name="SHIPTO.CELLPHONE" type="id_String" xpath="row2.body:/data/customer/SHIPTO.CELLPHONE"/>
+              <children name="SHIPTO.PAGER" type="id_String" xpath="row2.body:/data/customer/SHIPTO.PAGER"/>
+              <children name="SHIPTO.FAX" type="id_String" xpath="row2.body:/data/customer/SHIPTO.FAX"/>
+              <children name="SHIPTO.EMAIL1" type="id_String" xpath="row2.body:/data/customer/SHIPTO.EMAIL1"/>
+              <children name="SHIPTO.EMAIL2" type="id_String" xpath="row2.body:/data/customer/SHIPTO.EMAIL2"/>
+              <children name="SHIPTO.URL1" type="id_String" xpath="row2.body:/data/customer/SHIPTO.URL1"/>
+              <children name="SHIPTO.URL2" type="id_String" xpath="row2.body:/data/customer/SHIPTO.URL2"/>
+              <children name="SHIPTO.VISIBLE" type="id_String" xpath="row2.body:/data/customer/SHIPTO.VISIBLE"/>
+              <children name="SHIPTO.MAILADDRESS.ADDRESS1" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.ADDRESS1"/>
+              <children name="SHIPTO.MAILADDRESS.ADDRESS2" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.ADDRESS2"/>
+              <children name="SHIPTO.MAILADDRESS.CITY" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.CITY"/>
+              <children name="SHIPTO.MAILADDRESS.STATE" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.STATE"/>
+              <children name="SHIPTO.MAILADDRESS.ZIP" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.ZIP"/>
+              <children name="SHIPTO.MAILADDRESS.COUNTRY" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.COUNTRY"/>
+              <children name="SHIPTO.MAILADDRESS.COUNTRYCODE" type="id_String" xpath="row2.body:/data/customer/SHIPTO.MAILADDRESS.COUNTRYCODE"/>
+              <children name="BILLTO.CONTACTNAME" type="id_String" xpath="row2.body:/data/customer/BILLTO.CONTACTNAME"/>
+              <children name="BILLTO.PREFIX" type="id_String" xpath="row2.body:/data/customer/BILLTO.PREFIX"/>
+              <children name="BILLTO.FIRSTNAME" type="id_String" xpath="row2.body:/data/customer/BILLTO.FIRSTNAME"/>
+              <children name="BILLTO.INITIAL" type="id_String" xpath="row2.body:/data/customer/BILLTO.INITIAL"/>
+              <children name="BILLTO.LASTNAME" type="id_String" xpath="row2.body:/data/customer/BILLTO.LASTNAME"/>
+              <children name="BILLTO.COMPANYNAME" type="id_String" xpath="row2.body:/data/customer/BILLTO.COMPANYNAME"/>
+              <children name="BILLTO.PRINTAS" type="id_String" xpath="row2.body:/data/customer/BILLTO.PRINTAS"/>
+              <children name="BILLTO.TAXABLE" type="id_String" xpath="row2.body:/data/customer/BILLTO.TAXABLE"/>
+              <children name="BILLTO.TAXGROUP" type="id_String" xpath="row2.body:/data/customer/BILLTO.TAXGROUP"/>
+              <children name="BILLTO.PHONE1" type="id_String" xpath="row2.body:/data/customer/BILLTO.PHONE1"/>
+              <children name="BILLTO.PHONE2" type="id_String" xpath="row2.body:/data/customer/BILLTO.PHONE2"/>
+              <children name="BILLTO.CELLPHONE" type="id_String" xpath="row2.body:/data/customer/BILLTO.CELLPHONE"/>
+              <children name="BILLTO.PAGER" type="id_String" xpath="row2.body:/data/customer/BILLTO.PAGER"/>
+              <children name="BILLTO.FAX" type="id_String" xpath="row2.body:/data/customer/BILLTO.FAX"/>
+              <children name="BILLTO.EMAIL1" type="id_String" xpath="row2.body:/data/customer/BILLTO.EMAIL1"/>
+              <children name="BILLTO.EMAIL2" type="id_String" xpath="row2.body:/data/customer/BILLTO.EMAIL2"/>
+              <children name="BILLTO.URL1" type="id_String" xpath="row2.body:/data/customer/BILLTO.URL1"/>
+              <children name="BILLTO.URL2" type="id_String" xpath="row2.body:/data/customer/BILLTO.URL2"/>
+              <children name="BILLTO.VISIBLE" type="id_String" xpath="row2.body:/data/customer/BILLTO.VISIBLE"/>
+              <children name="BILLTO.MAILADDRESS.ADDRESS1" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.ADDRESS1"/>
+              <children name="BILLTO.MAILADDRESS.ADDRESS2" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.ADDRESS2"/>
+              <children name="BILLTO.MAILADDRESS.CITY" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.CITY"/>
+              <children name="BILLTO.MAILADDRESS.STATE" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.STATE"/>
+              <children name="BILLTO.MAILADDRESS.ZIP" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.ZIP"/>
+              <children name="BILLTO.MAILADDRESS.COUNTRY" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.COUNTRY"/>
+              <children name="BILLTO.MAILADDRESS.COUNTRYCODE" type="id_String" xpath="row2.body:/data/customer/BILLTO.MAILADDRESS.COUNTRYCODE"/>
+              <children name="STATUS" outgoingConnections="//@node.7/@nodeData/@connections.19" type="id_String" xpath="row2.body:/data/customer/STATUS"/>
+              <children name="ONETIME" outgoingConnections="//@node.7/@nodeData/@connections.20" type="id_String" xpath="row2.body:/data/customer/ONETIME"/>
+              <children name="CUSTMESSAGEID" type="id_String" xpath="row2.body:/data/customer/CUSTMESSAGEID"/>
+              <children name="ONHOLD" outgoingConnections="//@node.7/@nodeData/@connections.21" type="id_String" xpath="row2.body:/data/customer/ONHOLD"/>
+              <children name="PRCLST_OVERRIDE" type="id_Character" xpath="row2.body:/data/customer/PRCLST_OVERRIDE"/>
+              <children name="OEPRCLSTKEY" type="id_String" xpath="row2.body:/data/customer/OEPRCLSTKEY"/>
+              <children name="OEPRICESCHEDKEY" type="id_String" xpath="row2.body:/data/customer/OEPRICESCHEDKEY"/>
+              <children name="ENABLEONLINECARDPAYMENT" type="id_Boolean" xpath="row2.body:/data/customer/ENABLEONLINECARDPAYMENT"/>
+              <children name="ENABLEONLINEACHPAYMENT" type="id_Boolean" xpath="row2.body:/data/customer/ENABLEONLINEACHPAYMENT"/>
+              <children name="VSOEPRCLSTKEY" type="id_String" xpath="row2.body:/data/customer/VSOEPRCLSTKEY"/>
+              <children name="WHENMODIFIED" outgoingConnections="//@node.7/@nodeData/@connections.22" type="id_String" xpath="row2.body:/data/customer/WHENMODIFIED"/>
+              <children name="ARINVOICEPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/ARINVOICEPRINTTEMPLATEID"/>
+              <children name="OEQUOTEPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OEQUOTEPRINTTEMPLATEID"/>
+              <children name="OEORDERPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OEORDERPRINTTEMPLATEID"/>
+              <children name="OELISTPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OELISTPRINTTEMPLATEID"/>
+              <children name="OEINVOICEPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OEINVOICEPRINTTEMPLATEID"/>
+              <children name="OEADJPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OEADJPRINTTEMPLATEID"/>
+              <children name="OEOTHERPRINTTEMPLATEID" type="id_String" xpath="row2.body:/data/customer/OEOTHERPRINTTEMPLATEID"/>
+              <children name="WHENCREATED" outgoingConnections="//@node.7/@nodeData/@connections.23" type="id_String" xpath="row2.body:/data/customer/WHENCREATED"/>
+              <children name="CREATEDBY" type="id_Integer" xpath="row2.body:/data/customer/CREATEDBY"/>
+              <children name="MODIFIEDBY" type="id_Integer" xpath="row2.body:/data/customer/MODIFIEDBY"/>
+              <children name="OBJECTRESTRICTION" type="id_String" xpath="row2.body:/data/customer/OBJECTRESTRICTION"/>
+              <children name="DISPLAYCONTACTKEY" type="id_Integer" xpath="row2.body:/data/customer/DISPLAYCONTACTKEY"/>
+              <children name="CONTACTKEY" type="id_String" xpath="row2.body:/data/customer/CONTACTKEY"/>
+              <children name="SHIPTOKEY" type="id_String" xpath="row2.body:/data/customer/SHIPTOKEY"/>
+              <children name="BILLTOKEY" type="id_String" xpath="row2.body:/data/customer/BILLTOKEY"/>
+              <children name="CUSTREPKEY" type="id_String" xpath="row2.body:/data/customer/CUSTREPKEY"/>
+              <children name="SHIPVIAKEY" type="id_String" xpath="row2.body:/data/customer/SHIPVIAKEY"/>
+              <children name="TERRITORYKEY" type="id_String" xpath="row2.body:/data/customer/TERRITORYKEY"/>
+              <children name="TERMSKEY" type="id_Integer" xpath="row2.body:/data/customer/TERMSKEY"/>
+              <children name="ACCOUNTLABELKEY" type="id_String" xpath="row2.body:/data/customer/ACCOUNTLABELKEY"/>
+              <children name="ACCOUNTKEY" type="id_String" xpath="row2.body:/data/customer/ACCOUNTKEY"/>
+              <children name="CUSTTYPEKEY" type="id_String" xpath="row2.body:/data/customer/CUSTTYPEKEY"/>
+              <children name="PRICESCHEDULEKEY" type="id_String" xpath="row2.body:/data/customer/PRICESCHEDULEKEY"/>
+              <children name="OFFSETGLACCOUNTNO" type="id_String" xpath="row2.body:/data/customer/OFFSETGLACCOUNTNO"/>
+              <children name="OFFSETGLACCOUNTNOTITLE" type="id_String" xpath="row2.body:/data/customer/OFFSETGLACCOUNTNOTITLE"/>
+              <children name="ADVBILLBY" type="id_String" xpath="row2.body:/data/customer/ADVBILLBY"/>
+              <children name="ADVBILLBYTYPE" type="id_String" xpath="row2.body:/data/customer/ADVBILLBYTYPE"/>
+              <children name="SUPDOCID" type="id_String" xpath="row2.body:/data/customer/SUPDOCID"/>
+              <children name="RETAINAGEPERCENTAGE" type="id_String" xpath="row2.body:/data/customer/RETAINAGEPERCENTAGE"/>
+              <children name="EMAILOPTIN" type="id_Boolean" xpath="row2.body:/data/customer/EMAILOPTIN"/>
+              <children name="MEGAENTITYKEY" type="id_String" xpath="row2.body:/data/customer/MEGAENTITYKEY"/>
+              <children name="MEGAENTITYID" type="id_String" xpath="row2.body:/data/customer/MEGAENTITYID"/>
+              <children name="MEGAENTITYNAME" type="id_String" xpath="row2.body:/data/customer/MEGAENTITYNAME"/>
+              <children name="HIDEDISPLAYCONTACT" type="id_Boolean" xpath="row2.body:/data/customer/HIDEDISPLAYCONTACT"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="customer">
+        <nodes expression="[row2.body:/data/customer/RECORDNO]" incomingConnections="//@node.7/@nodeData/@connections.0" name="RECORDNO" type="id_String" xpath="customer/RECORDNO"/>
+        <nodes expression="[row2.body:/data/customer/CUSTOMERID]" incomingConnections="//@node.7/@nodeData/@connections.1" name="CUSTOMERID" type="id_String" xpath="customer/CUSTOMERID"/>
+        <nodes expression="[row2.body:/data/customer/NAME]" incomingConnections="//@node.7/@nodeData/@connections.2" name="NAME" type="id_String" xpath="customer/NAME"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.CONTACTNAME]" incomingConnections="//@node.7/@nodeData/@connections.3" name="DISPLAYCONTACT_CONTACTNAME" type="id_String" xpath="customer/DISPLAYCONTACT_CONTACTNAME"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.COMPANYNAME]" incomingConnections="//@node.7/@nodeData/@connections.4" name="DISPLAYCONTACT_COMPANYNAME" type="id_String" xpath="customer/DISPLAYCONTACT_COMPANYNAME"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.PREFIX]" incomingConnections="//@node.7/@nodeData/@connections.5" name="DISPLAYCONTACT_PREFIX" type="id_String" xpath="customer/DISPLAYCONTACT_PREFIX"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.FIRSTNAME]" incomingConnections="//@node.7/@nodeData/@connections.6" name="DISPLAYCONTACT_FIRSTNAME" type="id_String" xpath="customer/DISPLAYCONTACT_FIRSTNAME"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.LASTNAME]" incomingConnections="//@node.7/@nodeData/@connections.7" name="DISPLAYCONTACT_LASTNAME" type="id_String" xpath="customer/DISPLAYCONTACT_LASTNAME"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.INITIAL]" incomingConnections="//@node.7/@nodeData/@connections.8" name="DISPLAYCONTACT_INITIAL" type="id_String" xpath="customer/DISPLAYCONTACT_INITIAL"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.PRINTAS]" incomingConnections="//@node.7/@nodeData/@connections.9" name="DISPLAYCONTACT_PRINTAS" type="id_String" xpath="customer/DISPLAYCONTACT_PRINTAS"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ADDRESS1]" incomingConnections="//@node.7/@nodeData/@connections.10" name="DISPLAYCONTACT_ADDRESS1" type="id_String" xpath="customer/DISPLAYCONTACT_ADDRESS1"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ADDRESS2]" incomingConnections="//@node.7/@nodeData/@connections.11" name="DISPLAYCONTACT_ADDRESS2" type="id_String" xpath="customer/DISPLAYCONTACT_ADDRESS2"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.CITY]" incomingConnections="//@node.7/@nodeData/@connections.12" name="DISPLAYCONTACT_CITY" type="id_String" xpath="customer/DISPLAYCONTACT_CITY"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.STATE]" incomingConnections="//@node.7/@nodeData/@connections.13" name="DISPLAYCONTACT_STATE" type="id_String" xpath="customer/DISPLAYCONTACT_STATE"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.ZIP]" incomingConnections="//@node.7/@nodeData/@connections.14" name="DISPLAYCONTACT_ZIP" type="id_String" xpath="customer/DISPLAYCONTACT_ZIP"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.COUNTRY]" incomingConnections="//@node.7/@nodeData/@connections.15" name="DISPLAYCONTACT_COUNTRY" type="id_String" xpath="customer/DISPLAYCONTACT_COUNTRY"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.MAILADDRESS.COUNTRYCODE]" incomingConnections="//@node.7/@nodeData/@connections.16" name="DISPLAYCONTACT_COUNTRYCODE" type="id_String" xpath="customer/DISPLAYCONTACT_COUNTRYCODE"/>
+        <nodes expression="[row2.body:/data/customer/DISPLAYCONTACT.STATUS]" incomingConnections="//@node.7/@nodeData/@connections.17" name="DISPLAYCONTACT_STATUS" type="id_String" xpath="customer/DISPLAYCONTACT_STATUS"/>
+        <nodes expression="[row2.body:/data/customer/TERMNAME]" incomingConnections="//@node.7/@nodeData/@connections.18" name="TERMNAME" type="id_String" xpath="customer/TERMNAME"/>
+        <nodes expression="[row2.body:/data/customer/STATUS]" incomingConnections="//@node.7/@nodeData/@connections.19" name="STATUS" type="id_String" xpath="customer/STATUS"/>
+        <nodes expression="[row2.body:/data/customer/ONETIME]" incomingConnections="//@node.7/@nodeData/@connections.20" name="ONETIME" type="id_String" xpath="customer/ONETIME"/>
+        <nodes expression="[row2.body:/data/customer/ONHOLD] " incomingConnections="//@node.7/@nodeData/@connections.21" name="ONHOLD" type="id_String" xpath="customer/ONHOLD"/>
+        <nodes expression="[row2.body:/data/customer/WHENMODIFIED]" incomingConnections="//@node.7/@nodeData/@connections.22" name="WHENMODIFIED" type="id_String" xpath="customer/WHENMODIFIED"/>
+        <nodes expression="[row2.body:/data/customer/WHENCREATED]" incomingConnections="//@node.7/@nodeData/@connections.23" name="WHENCREATED" type="id_String" xpath="customer/WHENCREATED"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.7" target="//@node.7/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.8" target="//@node.7/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.9" target="//@node.7/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.10" target="//@node.7/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.11" target="//@node.7/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.12" target="//@node.7/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.13" target="//@node.7/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.30" target="//@node.7/@nodeData/@outputTrees.0/@nodes.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.31" target="//@node.7/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.32" target="//@node.7/@nodeData/@outputTrees.0/@nodes.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.33" target="//@node.7/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.34" target="//@node.7/@nodeData/@outputTrees.0/@nodes.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.35" target="//@node.7/@nodeData/@outputTrees.0/@nodes.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.36" target="//@node.7/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.39" target="//@node.7/@nodeData/@outputTrees.0/@nodes.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.40" target="//@node.7/@nodeData/@outputTrees.0/@nodes.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.142" target="//@node.7/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.143" target="//@node.7/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.145" target="//@node.7/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.152" target="//@node.7/@nodeData/@outputTrees.0/@nodes.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5/@children.160" target="//@node.7/@nodeData/@outputTrees.0/@nodes.23" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECORDNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_CONTACTNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COMPANYNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_PREFIX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_FIRSTNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_LASTNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_INITIAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_PRINTAS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ADDRESS1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ADDRESS2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_CITY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_STATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ZIP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COUNTRY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COUNTRYCODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_STATUS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TERMNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONETIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONHOLD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WHENMODIFIED"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WHENCREATED"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="tLogRow_4">
+      <column comment="" key="true" length="-1" name="RECORDNO" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="CUSTOMER_NAME" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CONTACTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COMPANYNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PREFIX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_FIRSTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_LASTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_INITIAL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PRINTAS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS1" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS2" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CITY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ZIP" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRYCODE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TERMNAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONETIME" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONHOLD" nullable="true" originalLength="-1" precision="-1" sourceType="id_Boolean" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENMODIFIED" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENCREATED" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bVbgQP2BEeqDLvhhiPQ3zg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;USPA01BIPD01&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;STI-RAW&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;TL2020&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:t0qVBKvM3NHSVZ3gfnpNMdMSgRwjxojkQMj7PjLJbTo7QKasGIFXCnH09A=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;D_CUSTOMER_INTACCT&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="RECORDNO"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECORDNO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTOMERID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_CONTACTNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COMPANYNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_PREFIX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_FIRSTNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_LASTNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_INITIAL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_PRINTAS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ADDRESS1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ADDRESS2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_CITY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_STATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_ZIP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COUNTRY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_COUNTRYCODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISPLAYCONTACT_STATUS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TERMNAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONETIME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONHOLD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WHENMODIFIED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WHENCREATED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="tDBOutput_1">
+      <column comment="" key="true" length="-1" name="RECORDNO" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="CUSTOMER_NAME" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CONTACTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COMPANYNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PREFIX" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_FIRSTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_LASTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_INITIAL" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PRINTAS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS1" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS2" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CITY" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATE" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ZIP" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRY" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRYCODE" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TERMNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONETIME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONHOLD" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENMODIFIED" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENCREATED" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="customer" name="REJECT">
+      <column comment="" key="true" length="-1" name="RECORDNO" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSTOMERID" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAME" nullable="true" originalDbColumnName="CUSTOMER_NAME" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CONTACTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COMPANYNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PREFIX" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_FIRSTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_LASTNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_INITIAL" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_PRINTAS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS1" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ADDRESS2" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_CITY" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATE" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_ZIP" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRY" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_COUNTRYCODE" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DISPLAYCONTACT_STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TERMNAME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONETIME" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ONHOLD" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENMODIFIED" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WHENCREATED" nullable="true" originalLength="-1" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tRESTClient_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row33" lineStyle="0" metaname="tRESTClient_1" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row33"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tExtractXMLField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tExtractXMLField_1" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_1" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer" lineStyle="0" metaname="customer" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="customer"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0ceb83ce-48a2-4b6e-84dd-f637a6aa104d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+BwhAmwH5lk0CMlbP9yYEZC6/Td9+fqzudN3Vp6KCk01q9vUN0EHzYvKOyGS/zwpljTHaNuMffiU
+1Dp0V2ziUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fc663dfa-929d-4382-8bd0-a111b560e936"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cCYeWptGTHL+EaU941whaFbbAlf69L3YQfOT85zxKxgJLltIYLNdWDIpAofgN/48SJL9F9nVj2BX
+qDzg30pM3A==</DigestValue></Reference></SignedInfo><SignatureValue>FLW0guzMfQ7BmyJF2yM82euYyO6LkeWe29I6SrWdkmYAHlFX/lkz0cSeIOTYAMKuI/1DOxfsyiKW
+4DwQiroJUD/14jrMFVxAfNDSK7eoUF5TcC8KPBvroL8WUqbmEHpAk9X4QCOTYrOvcqd8R+BBCmm3
+jvxODtSHYDuWpm10LfxgpwXF7xOnz9WnNGjnvTOKi+lzN7YqmvTHXMHJkUthxUo8Jdh2ZpCBqkVk
+UVfyUmdzKMOZ+Egy95HVRm3MkyOPMgcCKbO8EYHMkS9dZcVX2/RqrqXsUtr7mZOid+etxk5VpQoD
+ivTu3TTWIUWkrdu3ggumw6ovxt+97bgapyNACw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fc663dfa-929d-4382-8bd0-a111b560e936" Target="#_0ceb83ce-48a2-4b6e-84dd-f637a6aa104d"><Timestamp>2020-09-27 09:02:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
