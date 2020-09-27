@@ -37,6 +37,8 @@
     <module>jobs/process/demo/filetoclob_0.1</module>
     <module>jobs/process/filetoxml_0.1</module>
     <module>jobs/process/readxmlfile_0.1</module>
+    <module>jobs/process/email/reademailfromfolder_0.1</module>
+    <module>jobs/process/email/reademail_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
