@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+   <control>
+      <senderid>STILLC</senderid>
+      <password>Sti__11152018</password>
+      <controlid>'23-Aug-19 07.20.43'</controlid>
+      <uniqueid>false</uniqueid>
+      <dtdversion>3.0</dtdversion>
+      <includewhitespace>false</includewhitespace>
+   </control>
+   <operation>
+      <authentication>
+         <login>
+                <userid>xmlgw-Billing</userid>
+	                <companyid>STILLC</companyid>
+	                <password>Agck63@3XnW</password>
+            <locationid>E200</locationid>
+         </login>
+      </authentication>
+      <content>
+         <function controlid="testFunctionId">
+                <readByQuery>
+    			<object>CUSTOMER</object>
+    			<fields>*</fields>
+    			<query></query>
+    			<pagesize>100</pagesize>
+		</readByQuery>                    
+         </function>
+      </content>
+   </operation>
+</request>

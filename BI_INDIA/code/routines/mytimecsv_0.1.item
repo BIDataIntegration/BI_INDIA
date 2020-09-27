@@ -1,0 +1,387 @@
+package routines;
+
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
+import routines.CalabrioAgentSchedules;
+
+import org.apache.commons.lang3.time.DateUtils;
+import org.slf4j.LoggerFactory;
+
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class mytimecsv {
+
+	 private static final String FILE_HEADER = "ActivityDate,AgtName,Logid,Arr,Dep,Type";
+	 private static final String NEW_LINE_SEPARATOR = "\n";
+	 private static final String COMMA_DELIMITER = ",";
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+    
+    public static void WriteToFile(List date1,List ArrDep,List DataStr,int numberOfColumns,FileWriter fileWriter){
+
+        String dep = "";
+      // logger.info("Data Str ="+DataStr);
+      //  logger.info("Data Str length ="+DataStr.size());
+
+        List<CalabrioAgentSchedules> AgentsData = new ArrayList<CalabrioAgentSchedules>();
+
+        for(int i=0; i<date1.size();i++){
+        	routines.CalabrioAgentSchedules agent = new routines.CalabrioAgentSchedules();
+            agent.setActivityDate((String)date1.get(i));
+            agent.setAgtName((String)DataStr.get(0));
+            agent.setLoginid(((String)DataStr.get(1)).substring(1,8));
+          //  logger.info("getActivityDate="+agent.getActivityDate());
+            Date AD = new Date(agent.getActivityDate());
+            Date ADNextDate = DateUtils.addDays(AD,1);
+            String depdate="",depdateNextDay="";
+
+
+                 depdate = new SimpleDateFormat("MM/dd/yyyy").format(AD);
+                 depdateNextDay = new SimpleDateFormat("MM/dd/yyyy").format(ADNextDate);
+
+               //  logger.info("depdate="+depdate);
+                // logger.info("depdateNextDay="+depdateNextDay);
+
+
+
+            if(i==0){
+
+                dep = (String)DataStr.get(3);
+               // logger.info("dep inside 0 = "+ dep);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(2));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+
+                agent.setType(getType((String)DataStr.get(2),(String)DataStr.get(3)));
+            }
+            if(i==1){
+                dep = (String)DataStr.get(5);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(4));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(4),(String)DataStr.get(5)));
+            }
+            if(i==2){
+                dep = (String)DataStr.get(7);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(6));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(6),(String)DataStr.get(7)));
+            }
+            if(i==3){
+                dep = (String)DataStr.get(9);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(8));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(8),(String)DataStr.get(9)));
+            }
+            if(i==4){
+                dep = (String)DataStr.get(11);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(10));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(10),(String)DataStr.get(11)));
+            }
+            if(i==5){
+                dep = (String)DataStr.get(13);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(12));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(12),(String)DataStr.get(13)));
+            }
+            if(i==6){
+                dep = (String)DataStr.get(15);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(14));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(14),(String)DataStr.get(15)));
+            }
+            if(i==7){
+                dep = (String)DataStr.get(17);
+                if(!dep.contains("--")) {
+                    agent.setArr(depdate +' ' +(String)DataStr.get(16));
+                    if (dep.contains("*")) {
+                        agent.setDep(depdateNextDay + " " + (dep.replace("*", " ")));
+                    } else {
+                        agent.setDep(depdate + " " + dep);
+                    }
+                }else{
+                    agent.setArr("");
+                    agent.setDep("");
+                }
+                agent.setType(getType((String)DataStr.get(16),(String)DataStr.get(17)));
+            }
+
+
+            AgentsData.add(agent);
+        }
+        try{
+
+        for (CalabrioAgentSchedules agent : AgentsData) {
+
+            fileWriter.append(agent.getActivityDate());
+
+            fileWriter.append(COMMA_DELIMITER);
+
+            fileWriter.append(agent.getAgtName());
+
+            fileWriter.append(COMMA_DELIMITER);
+
+            fileWriter.append(agent.getLoginid());
+
+            fileWriter.append(COMMA_DELIMITER);
+
+            fileWriter.append(agent.getArr());
+
+            fileWriter.append(COMMA_DELIMITER);
+
+            fileWriter.append(agent.getDep());
+
+            fileWriter.append(COMMA_DELIMITER);
+
+            fileWriter.append(agent.getType());
+
+            fileWriter.append(NEW_LINE_SEPARATOR);
+
+        }
+
+
+
+
+
+
+
+
+}catch (Exception e){
+    e.printStackTrace();
+}
+    }
+    public static void readAllDataAtOnce2(String file,String OutputFilePath)
+    {
+        FileWriter fileWriter = null;
+
+        try {
+            // Create an object of file reader
+            // class with CSV file as a parameter.
+            FileReader filereader = new FileReader(file);
+
+            // create csvReader object and skip first Line
+            CSVReader csvReader = new CSVReaderBuilder(filereader)
+                    .withSkipLines(3)
+                    .build();
+            List<String[]> allData = csvReader.readAll();
+
+            //List<String> ActDate = new ArrayList<String>();
+            Set<String> ActDate = new LinkedHashSet<String>();
+            List<String> ADStr = new ArrayList<String>();
+            List<String> Data = new ArrayList<String>();
+
+            int totalNumRows=allData.size();
+
+           // logger.info("Total number of rows = "+ allData.size());
+            // print Data
+            int number_of_columns =0 ;
+            for (String row : allData.get(0)) {
+                if(!row.equals("")){
+                    number_of_columns++;
+                    Date ADDate= new Date(row);
+                    //logger.info("Row="+row);
+                    //logger.info("ADDate="+ADDate);
+
+                    //logger.info("Date="+new SimpleDateFormat("MM/dd/yyyy").format(ADDate));
+                    ActDate.add(new SimpleDateFormat("MM/dd/yyyy").format(ADDate));
+                //    logger.info("row length-"+number_of_columns+" ="+row);
+
+                }
+            }
+
+            int number_of_columns_str=0,number_of_columns_AD=0;
+            for (String row : allData.get(1) ) {
+                if(number_of_columns_str < number_of_columns+2){
+                    if(!row.equals("") && number_of_columns_str>1 && number_of_columns_str < number_of_columns+2){
+                         number_of_columns_AD++;
+                        ADStr.add(row);
+                  //      logger.info("row length-"+number_of_columns_AD+" ="+row);
+
+                    }
+                    number_of_columns_str++;
+                }
+            }
+
+            List<Map> Names = new ArrayList<>();
+            Map<String,String> NameID = new HashMap();
+
+            fileWriter = new FileWriter(OutputFilePath);
+            //Write the CSV file header
+
+            fileWriter.append(FILE_HEADER.toString());
+            //Add a new line separator after the header
+
+            fileWriter.append(NEW_LINE_SEPARATOR);
+
+            for(int i=2 ; i<totalNumRows;i++)
+            {
+                if(!allData.get(i)[0].equals("") && !allData.get(i)[0].contains("* Departure is on a different day than arrival")){
+              // logger.info("First Column="+allData.get(i)[0]);
+            for (String row : allData.get(i)) {
+
+                    if(!row.equals("") ){
+                       // logger.info(row);
+                      //  NameID.put(allData.get(i)[0],allData.get(i)[1]);
+                        Data.add(row);
+
+                    }
+                }
+                    List<String> ActDatelist = new ArrayList<String>(ActDate);
+
+                    WriteToFile(ActDatelist,ADStr,Data,number_of_columns,fileWriter);
+                    Data.clear();
+
+
+                }
+
+           /*     for (Map.Entry<String,String> entry : NameID.entrySet())
+                    logger.info("Key = " + entry.getKey() +
+                            ", Value = " + entry.getValue());
+            */
+
+
+            }
+
+
+          //  logger.info("number_of_columns="+number_of_columns + ", number_of_columns_AD="+number_of_columns_AD );
+          //  logger.info("ActDate="+ActDate + ", ADStr="+ADStr );
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try{
+                fileWriter.flush();
+
+                fileWriter.close();
+            }catch (Exception e){
+
+            }
+        }
+    }
+    
+    public static String getType(String arr,String dep){
+        String type=" ";
+        int arr_time=0;
+        int dep_time=0;
+
+        if(!arr.contains("--")){
+           // logger.info("arr="+arr);
+             arr_time=Integer.parseInt(arr.substring(0,arr.indexOf(':')));
+           // logger.info("arr_time="+arr_time);
+        }
+
+
+        if(!dep.contains("--")){
+            //logger.info("dep="+dep);
+            dep_time=Integer.parseInt(dep.substring(0,dep.indexOf(':')));
+          //  logger.info("dep_time="+dep_time);
+        }
+
+        if(arr_time > dep_time && dep_time!=0){
+            return "OverNite";
+        }
+
+
+        return type;
+    } 
+}

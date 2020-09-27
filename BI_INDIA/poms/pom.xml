@@ -12,6 +12,31 @@
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/filetmapfile_0.1</module>
+    <module>jobs/process/demo/exceltoexcel_0.1</module>
+    <module>jobs/process/scd_mssql/updatedatainmssql_source_table_0.1</module>
+    <module>jobs/process/migratedata_0.1</module>
+    <module>jobs/process/Intacct/loadintacctdimensiontablesfromrestapisavedfile_0.1</module>
+    <module>jobs/process/scd_mssql/mssqlscddemowithoutscd_0.1</module>
+    <module>jobs/process/Intacct/fetchdatafromintacctrestapi_0.1</module>
+    <module>jobs/process/Intacct/readxmlfilefromfixedflowinput_0.1</module>
+    <module>jobs/process/Intacct/loadintacctdimensiontablesfromrestapi_0.1</module>
+    <module>jobs/process/scd_mssql/createtableanddatainmssqlfinal_0.1</module>
+    <module>jobs/process/demo/exceltodb_0.1</module>
+    <module>jobs/process/ftp_read_0.1</module>
+    <module>jobs/process/updatetabusingsql_0.1</module>
+    <module>jobs/process/Mytime/mytimedownload_0.1</module>
+    <module>jobs/process/demo/demo/intacctdimentionload_0.1</module>
+    <module>jobs/process/scd_mssql/mssqlscddemo_0.1</module>
+    <module>jobs/process/demo/oracledbtoexcel_0.1</module>
+    <module>jobs/process/CDC/insertdummydata_0.1</module>
+    <module>jobs/process/Intacct/intactcreatexmlfromdb_0.1</module>
+    <module>jobs/process/CDC/cdc_sync_0.1</module>
+    <module>jobs/process/Intacct/loadintacctdimensiontablesfromdb_0.1</module>
+    <module>jobs/process/demo/calloraclesp_0.1</module>
+    <module>jobs/process/dimentiontable_0.1</module>
+    <module>jobs/process/demo/filetoclob_0.1</module>
+    <module>jobs/process/filetoxml_0.1</module>
+    <module>jobs/process/readxmlfile_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
