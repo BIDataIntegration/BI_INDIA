@@ -58,7 +58,7 @@ public class mytimecsv {
     public static void WriteToFile(List date1,List ArrDep,List DataStr,int numberOfColumns,FileWriter fileWriter){
 
         String dep = "";
-      // logger.info("Data Str ="+DataStr);
+       logger.info("Data Str ="+DataStr);
       //  logger.info("Data Str length ="+DataStr.size());
 
         List<CalabrioAgentSchedules> AgentsData = new ArrayList<CalabrioAgentSchedules>();
@@ -66,6 +66,7 @@ public class mytimecsv {
         for(int i=0; i<date1.size();i++){
         	routines.CalabrioAgentSchedules agent = new routines.CalabrioAgentSchedules();
             agent.setActivityDate((String)date1.get(i));
+            logger.info("depdate="+(String)DataStr.get(0));
             agent.setAgtName((String)DataStr.get(0));
             agent.setLoginid(((String)DataStr.get(1)).substring(1,8));
           //  logger.info("getActivityDate="+agent.getActivityDate());
