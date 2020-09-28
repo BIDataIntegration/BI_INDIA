@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:iT4Kw9BaTfDY71JoB8SMzs3oD8boTXZeHCBYkuKU"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Vy3pZy2cvHO8jIb2UFdRyZDERYXwjKuhdpR67fUw"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:B27mrwO0nHH2EV56F61s7/Y0CBaKkBkL+jEjkiHn"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iXk1QZRkjyORE1pGwXvFagn5sMapwXwcGB4x9EBf"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -126,7 +126,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;PCALLRPT_APP.sncrcorp.net&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;CMAP&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sti_readonly&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vlYJuoF8UtSdfxp5ma9G7JF/4xcahZtJTr2JWk84aOsRYlUiavHkY6sF"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vfq5NUO/vf3gANNYjpuWqHsoXzK29bDLD3i7zJJziirp+ln+G3qajVaz"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -452,6 +452,85 @@
       <column comment="" key="false" length="-1" name="PCT_SYSTEM_DOWN_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/mkapustic/Desktop/out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="DATE_KEY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DIM_DATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CAL_YEAR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CAL_YEAR_MONTH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PORTAL_DISPLAY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TEAM_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUPPORT_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CENTER_LOOKUP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CALLS_ANSWERED" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RING_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TALK_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ACW_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OB_WITH_IB_ONHOLD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OB_WO_IB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AVAILABLE_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNPROD_AUX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PROD_AUX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HOLD_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LUNCH_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BREAK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NEW_HIRE_TRAINING" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RECURSIVE_TRAINING" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_LOGIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYSTEM_DEFAULT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYSTEM_DOWN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DEC" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_LOGIN_BILLABLE_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_LOGIN_PRODUCTIVE_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_RINGTIME_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_IDLE_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_TOTAL_AUX_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_PROD_AUX_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_UNPROD_AUX_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_NO_LOGIN_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_SYSTEM_DEFAULT_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_SYSTEM_DOWN_LL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_LOGIN_BILLABLE_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_LOGIN_PRODUCTIVE_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_RINGTIME_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_IDLE_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_TOTAL_AUX_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_PROD_AUX_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_UNPROD_AUX_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_NO_LOGIN_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_SYSTEM_DEFAULT_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCT_SYSTEM_DOWN_LLBT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DECIMAL" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="DIM_DATE"/>
@@ -596,18 +675,22 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_36a72d38-cbb2-4923-b0b1-5fe2e166ba16"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2yRFZ6KNmeoXPcUa4mODdyPdnErROn4+CyZitgmwPOsmWJ0STxg0s0ZNOlOpm9ZzkAPJTWGjNt9L
-T+KKAN4nLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1bf9afe0-2386-4263-8fd4-c342c043d218"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nTjV+yHc3/zYL0yDj796fztkKoPFGTwjGF3jTMBSOVnKvHhXGD4WovgyXjzoWCeKGmjBPkxAmxPg
-PPb5O/9K3g==</DigestValue></Reference></SignedInfo><SignatureValue>XCuzA38TdHJ0yM9QFVivgKf3CR4AguV4lHFWBko+oSaSKb7ECIs1NwJjvFWhSb4Y76IX107LwKg7
-ItYNf3fMN6fIDn50HcD6DF03aJ2XDaOSrJb4Kbjp45WyOvwiikgH11/iJSRd2WKpSQ2Y2IJBy5id
-853n90nKJjSNnP4wYum9e/QhnRINIgfvcz1K8qhDxQ+AqMm2sTGlw15sxgEgzT0Z9yQ2whncQeY8
-EERAO3kPIxF5B//PDar8usuCSTYpWcmn7LrcqFzcaKpYvHekUmvdXUTEWkKiNPAIGLpkonLGkEnZ
-63Q/tmw9BFBgrfoDgbfLaOijF75HszlAezWUEQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0af9123c-1f4f-49af-8e39-c9a5eb8ff800"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xVkt5nMF8xbcdj1QHtMLK5tT+EvN9thVB8SzSW/4tpV779m1vJ2GDjb0vfC3SgA73bAvEBi204A8
+3jjqIWigCg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c64e1b2e-bd85-4055-9ab7-700cc7d4feb4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ggp4rlS8j6mFmsh5n/Q0UaofG33uhJstP+vRwC4DrFaZxKzpRJVxGCRmMDMIgA1kH2kDeVM51Rkx
+cBEKCoXLtQ==</DigestValue></Reference></SignedInfo><SignatureValue>PMR7Kq43HNC5idd9d9+C45HqVzBTkp0eXewvhACH2kezoZkQLNPpxEgv9/4CKeigGs/t8VA33yJP
+PW2yzLIyaqFWHIiaHwDSxkdh0C4XVMoiVTOv9fa9gYLLUkjMTwwljCQWflYwxAm//aS6Jv11T+pq
+KdEpRXZnqGbUZ+jEz365gEb1XcgeP3i/TlYhQ1pYGebHGRHpAXhOTCDc0mXl1BM9kem44npq6SF7
+TuR/ogAiYkGX+r1hOk8mZe7JebiDJHFc7awFEI4adoyWdBIObRrpdTs9O/t9W10TBY7JTGlEza8e
+uqWBDu88MeIzifvjOCrFEX/WqSoX6HqJjUz91Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -629,4 +712,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1bf9afe0-2386-4263-8fd4-c342c043d218" Target="#_36a72d38-cbb2-4923-b0b1-5fe2e166ba16"><Timestamp>2020-09-28 19:35:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c64e1b2e-bd85-4055-9ab7-700cc7d4feb4" Target="#_0af9123c-1f4f-49af-8e39-c9a5eb8ff800"><Timestamp>2020-09-28 19:37:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
