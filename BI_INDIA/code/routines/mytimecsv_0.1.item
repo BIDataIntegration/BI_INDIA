@@ -70,7 +70,7 @@ public class mytimecsv {
             //logger.info("depdate="+(String)DataStr.get(0));
             agent.setAgtName((String)DataStr.get(0));
             // original agent.setLoginid(((String)DataStr.get(1)).substring(1,8));
-            agent.setLoginid(((String)DataStr.get(1));
+            agent.setLoginid((String)DataStr.get(1));
           //  logger.info("getActivityDate="+agent.getActivityDate());
             Date AD = new Date(agent.getActivityDate());
             Date ADNextDate = DateUtils.addDays(AD,1);
