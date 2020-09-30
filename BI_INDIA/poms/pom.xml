@@ -45,6 +45,21 @@
     <module>jobs/process/testing_0.1</module>
     <module>jobs/process/required_v_actual_login_time_report_0.1</module>
     <module>jobs/process/sti_raw_hvdn_0.1</module>
+    <module>jobs/process/Rohit/xmltest_0.1</module>
+    <module>jobs/process/Rohit/db2xml_0.1</module>
+    <module>jobs/process/Rohit/cdc_insertdummydata_0.1</module>
+    <module>jobs/process/Rohit/mikeusecase2_0.1</module>
+    <module>jobs/process/Rohit/db2dbtransfer_0.1</module>
+    <module>jobs/process/SCD/scdwocomponent_0.1</module>
+    <module>jobs/joblets/error_logging_v2_0.1</module>
+    <module>jobs/process/Rohit/folderloop_0.1</module>
+    <module>jobs/process/Rohit/ftptest_0.1</module>
+    <module>jobs/process/Rohit/paralleljob1_0.1</module>
+    <module>jobs/process/Rohit/incrementcounter_0.1</module>
+    <module>jobs/process/Rohit/runifscenarios_0.1</module>
+    <module>jobs/process/Rohit/cdc_takeaction_0.1</module>
+    <module>jobs/process/Rohit/paralleljob2_0.1</module>
+    <module>jobs/process/Rohit/sqlupdatetest_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
