@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Dev" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="deetest75"/>
-    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Password" value="enc:system.encryption.key.v1:6GEA9uYow9D9K9qF/siwsaryxGODeMyM6Uwy6mTnAnvToq9S"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Password" value="enc:system.encryption.key.v1:+qjepzycVupHY8BsRYNRqcLl5QtaTFhpXCZchc1+wkMYWNXy"/>
     <contextParameter comment="" name="smtphost" prompt="smtphost?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="&quot;pop.gmail.com&quot;"/>
     <contextParameter comment="" name="smtpport" prompt="smtpport?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Integer" value="995"/>
     <contextParameter comment="" name="directorytostore" prompt="directorytostore?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="&quot;C:\\deepaktest\\email&quot;"/>
@@ -9,7 +9,7 @@
   </context>
   <context confirmationNeeded="false" name="Dev">
     <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="michael.kapustic@sequentialtech.com"/>
-    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Password" value="enc:system.encryption.key.v1:ErJOx80Lg7hO+cMNdEE5+4jCdxcXmlQc27atE7ipCA9ElPC8awXRizjBCdA="/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Password" value="enc:system.encryption.key.v1:J03lXgZ137eNbP9jz7j5QN8mpFmtZQ1JjkuQI3I1y4jQ64TKNVElx6lqsiA="/>
     <contextParameter comment="" name="smtphost" prompt="smtphost?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="&quot;outlook.office365.com&quot;"/>
     <contextParameter comment="" name="smtpport" prompt="smtpport?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_Integer" value="995"/>
     <contextParameter comment="" name="directorytostore" prompt="directorytostore?" promptNeeded="false" repositoryContextId="_KndNwP6XEeqzUprdL4hpKA" type="id_String" value="&quot;C:\\Users\\mkapustic\\OneDrive - Sequential Technology International\\Talend\\email&quot;"/>
@@ -57,7 +57,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:idZIxwUlqbC967te0T2iNpRgm/AnzcmMixLUGH+O"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+HfwVkCYoqqME+cP9680YukLEs0smlBXEWqZMmVA"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -92,7 +92,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yF9ZPBali2jjMyJxPeiGRhC9vvm0ez75Edm/ms4a"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pcpC1FsiPeifUC05V2ZYvDnk4t0hul+kCySPE21H"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -132,7 +132,7 @@
     <elementParameter field="TEXT" name="HOST" value="context.smtphost"/>
     <elementParameter field="TEXT" name="PORT" value="context.smtpport"/>
     <elementParameter field="TEXT" name="USERNAME" value="context.username"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:IkE406kB6BzzCcHkWRX+lnhM9/GtKomeqEmxl3NH7XFcwE97kty5Sn9EX1U="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:p3xDxC+tMUdRYfGksnouhfacx4hjgyhJy3bdyV8J5thD3SxLLy49zd1pCqc="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="context.directorytostore"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_1 + 1) + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="false"/>
@@ -195,33 +195,6 @@
       <column comment="" key="false" length="-1" name="From" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="true"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subject"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="From"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="Subject" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="From" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -265,36 +238,9 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputMail_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputMail_1" target="tLogRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Status"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Author"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Object"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Date"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Subject"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Sender"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="From"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputMail_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputMail_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputDelimited_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
@@ -306,13 +252,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5e16b8a6-94ba-4683-89a2-7fd8bf6c1c68"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GYZK6OgV7PoldW8a31gqKnd8qvTdzItzUh0RE7QmJaSbVgysC9+A/irt3iPb6ozLo0vGsP7Hloki
-ejDGvm4Zzg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe557e1d-b8dd-4da4-a8e7-78c5485cbb46"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y+CJDzrZY/81dZGWFXnIxeHe8UEFixys6OU1zPAg9i2D3Y7wRObevtFv9/8rRcBe5YqanyrbR5iU
-sewcT9OpSg==</DigestValue></Reference></SignedInfo><SignatureValue>KDr+ejj7GzDSbZH8duUaZ9j5Yy5mfi+d4KdC3D20p2dsb/3DVM62ccKwSCrP+fj33l0th9p2WV9R
-bLbYtROkmhrK8ARRw2dpWBtD9wHnL2OdsdLuohE7VO6muT9c8fBbcY+2OPCb0f3z93M8dfqSG3Xi
-Ec60lC7sYIl3CdlWSCZloCR8Fnr+W0QzP03aktlz1lpg1Py0l7UOBfHnr0pwAKA0Ker+3xn59PVe
-JbpypH+e+MrI5BT+RcynWsERxI6B2/NBMT1KK562F86OvK+bXvucFS+Alb4rkZzPXIl8+PV76adj
-H14YkA73zVuuPT8dK4Y543KXhZuNQejCMQF2Yw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2a62f566-e394-4957-ad0e-c7f32949c8cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0+V05FxZDAKkSfbHvES/0lKHYSaG9KiXmqj3YA/onZbGzbhVa0/Zo5kCJbQdcJDA2YdXjYo+Zo/7
+Mxggi77xOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_21b311ab-2aa9-40fb-b84e-3e9731675af3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tVPFz+b+T19OUrSudZ8BG7kC7CXIOCmEafwJ211e7GVw6W0ms7LHynpG9BKgJQ6CEOkbqAarVvcu
+ImvCwm4rwQ==</DigestValue></Reference></SignedInfo><SignatureValue>OhEEJPW08dqa1M6+YQ+7bZJPH5qLhOLycn01Oy6+RPgKRY23nZiAuWlwSVd2ICg9is9pxEsmZnvR
+zAIA260Fyx3aD/lRR28E6gBOx5eEx7GPXfE/fV4AyOJSjepcJFCt/FMBJdG6WJ1AAZZu+W1bZDwa
+dnB1stZA/s3xnXpuQUAxubHaxi2PLteBoLlrUwa9BYPe6owrXPYSCvSmszaXKBGoCbXx38Z+I165
+DO7rOa+VqapWv4ZY0+njrJf1ToB3G900qGoXTW/t6GgT48m5UbKw0aZ6q24azOOPv7BmPEhJJi7I
+L33u7GEP17ZSAEBeBRHW4j9dAZKfp6J6JT8LQQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -334,4 +280,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe557e1d-b8dd-4da4-a8e7-78c5485cbb46" Target="#_5e16b8a6-94ba-4683-89a2-7fd8bf6c1c68"><Timestamp>2020-10-01 23:28:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_21b311ab-2aa9-40fb-b84e-3e9731675af3" Target="#_2a62f566-e394-4957-ad0e-c7f32949c8cb"><Timestamp>2020-10-01 23:29:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
