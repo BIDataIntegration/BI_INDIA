@@ -60,6 +60,7 @@
     <module>jobs/process/Rohit/cdc_takeaction_0.1</module>
     <module>jobs/process/Rohit/paralleljob2_0.1</module>
     <module>jobs/process/Rohit/sqlupdatetest_0.1</module>
+    <module>jobs/process/throwaway_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
