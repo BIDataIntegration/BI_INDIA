@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Symmetrics_Database" prompt="Symmetrics_Database?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_db"/>
+    <contextParameter comment="" name="Symmetrics_AdditionalParams" prompt="Symmetrics_AdditionalParams?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value=""/>
+    <contextParameter comment="" name="Symmetrics_Port" prompt="Symmetrics_Port?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
+    <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
+    <contextParameter comment="" name="Symmetrics_Schema" prompt="Symmetrics_Schema?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:qVzMG6dFCCvl26hx6/WP7HJesEwu6ETVCIEVA/ljoWNxijTrCFNDUYAr"/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -40,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Kp5MaDLU0K8b+PM49nTVDUZ491pvmtpLE8er85bC"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0EjYiRC2n9ElQ7k/Kxo/AVO72btD+R78nG/m0fku"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -75,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rauqX1fZRZ8nkNTt+t151kxuaEDlfsqSiRttBFth"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1FeZYru2Rl5Ot1uxHRVBqvy8eUSSQSxwlDlGbZxY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -110,13 +120,74 @@
     <routinesParameter id="_OvOC0PKuEeqwTPBYyrfkMw" name="TalendStringUtil"/>
     <routinesParameter id="_Ou-yQPKuEeqwTPBYyrfkMw" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dc06d53f-572e-405e-a894-37eab5186c19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rbYJRjOoWbfA8C/yYVgu4CkPI0YX0LiC21AkDkoxgcAm1rsqbESg1xi4tJVAVqLo09igf6pYStm4
-Ks75UINDBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_46c520fb-abe9-4f3e-b9b1-1194e7f2f2da"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dutCdQ/AL6E/iw5nDUFUbCjOVKjJcrUMlhl0+fVtIyesXUv+ypf14etKO4GULj+QbD1hwyDVz2db
-iut3VShrjw==</DigestValue></Reference></SignedInfo><SignatureValue>hB4Xir/WVFh2oA/k5Prcu5hTIYgQSKxDrlhl0BoqCDYi52DcZJyyVTeiD9W3EMMixDx9oGLgjil7
-ZzxX4z4fE9jsV+vNmhhEFjHX0S2p0VgsMaJNqV0wI0FtpCKLqZ1FKyhY1S9HMn8GZCBrJofo3s4m
-Sh5iZIagP53GhyN01ugEPl+Nx7LF91r6aUP68sj+WtDsSLG0waS/ewcDLJ4LVFIsqCHpgdQSfoCh
-nWlgX5xbhLDMSQOUUL/QoO2g/LDTrDgAJH8es9Sef7WYpbzdCjtQ8V8oPKpgq7Xnug3qHZXzaGmR
-JVOO+o4Jc7OcdwhIdEvjEY3GxsT080Ygt6xUXg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_cUM-APYgEeqtjN2rL2UENA"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Symmetrics_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Symmetrics_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Symmetrics_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Symmetrics_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Symmetrics_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:P8mZS8ea9jcdSRBU/0NWmr7CP1pCK6G/z/mDBSdnFEoRajbH8dA1QA7WD4cPTY98YXLbjy+QgQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;describe f_cdr&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Symmetrics_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Symmetrics"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1"/>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e2d3a31c-f7fb-4693-9d00-08755c8105a9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WXDYM7qFMxFWTquJfbrmH7kheZNsm2UUU1ahdLmFGiAdvs54Yud/q70GV0+BSyzcaMrThCoxUfwH
+ybZD9Uprpg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2519c56e-9b27-43ab-ab8c-3d82e51d086f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>feyccE5vfpliEDMImPe/k6omPYp0XYA+v5qJbO3DeYXyyx4TQkrVFJg2x1v88SAdO3qVVFaTL/8/
++0Fn8E6yZQ==</DigestValue></Reference></SignedInfo><SignatureValue>KVvwuGLbHfg7H/xU/JcqGm/2bevpJdqxzquyP/CPxSRITJ35mjGaGqUeGw7loQMQPTxatX0X4sTF
+GViblQ1ZfqPQ+kl0ENVz5ljIptCxkfpKi44BmGQVZj7kPPR9YaaovPR1ZLKtOU6+aVkNhIw2J7dW
+9ba6mnj5ADyvJzYW0HgqWEG4Pkx/y1XZcviNcWYakVghT4LcCJVNvk0u/d0mm+0xYODytmyJkLvY
+ktQcXKJoCI4zRwPqROFtXoEq551km2Bntt7+TAWsaDvYKXCGKJZCwPQ1Npedv71gaC4QLNeoyRU6
+at4VROcWIZUP02tGqdAlEJgCrM8tRS/u81in7w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -138,4 +209,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_46c520fb-abe9-4f3e-b9b1-1194e7f2f2da" Target="#_dc06d53f-572e-405e-a894-37eab5186c19"><Timestamp>2020-10-03 00:50:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2519c56e-9b27-43ab-ab8c-3d82e51d086f" Target="#_e2d3a31c-f7fb-4693-9d00-08755c8105a9"><Timestamp>2020-10-03 00:56:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
