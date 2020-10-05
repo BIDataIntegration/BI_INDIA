@@ -6,7 +6,7 @@
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
     <contextParameter comment="" name="Symmetrics_Schema" prompt="Symmetrics_Schema?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="dbo"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:uVOpPTcfK2W6+sulyhHEvEpXlJpa41vgLTYvUDafJrgGruhCyLo9xHBw"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:I5KxwVW5rrMsEPXIBhBnhivo7sXPVaJV0nrvqPXbe/wuYYkrneOmAdcZ"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:78krDypR/qFcRHWB6EofBQAfrVOdvCnQkdK4WQVj"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:HmDaofCaCRCu9m7RD9/+/WZrldg+VsvAdm5sEFqg"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BTlAfYYyWvGexBj+MOWVD0T9Dboi1LaiywsR7wk3"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EskSzijE+Ut4Lb6oVPhil0MmYMcMeOezaAIvArUJ"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -152,7 +152,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.Symmetrics_Database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.Symmetrics_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q3QOzW4RbeftV4O/z+w4JMTXoElF/WS/41ehEDXG1Ars1I2kucV0jwehzpjseL2NxcnkMSkyTw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MSKar4FxC8e7zuBDMqDwfkOCPVwLwlm1nhZMkYDWOBXheBpB+kHr6kLO/kpxYdCzjiu5+lvrvg=="/>
     <elementParameter field="TEXT" name="SP_NAME" value="&quot;sp_columns&quot;"/>
     <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="name"/>
@@ -272,9 +272,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAdvancedFileOutputXML_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/mkapustic/workspace/out3.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/mkapustic/Desktop/out3.xml&quot;"/>
     <elementParameter field="TABLE" name="ROOT" show="false">
-      <elementValue elementRef="PATH" value="/root"/>
+      <elementValue elementRef="PATH" value="/schema"/>
       <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
@@ -282,106 +282,71 @@
     </elementParameter>
     <elementParameter field="TABLE" name="GROUP" show="false"/>
     <elementParameter field="TABLE" name="LOOP" show="false">
-      <elementValue elementRef="PATH" value="/root/row"/>
+      <elementValue elementRef="PATH" value="/schema/column"/>
       <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="2"/>
-      <elementValue elementRef="PATH" value="TABLE_QUALIFIER"/>
-      <elementValue elementRef="COLUMN" value="TABLE_QUALIFIER"/>
+      <elementValue elementRef="PATH" value="comment"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="TABLE_OWNER"/>
-      <elementValue elementRef="COLUMN" value="TABLE_OWNER"/>
+      <elementValue elementRef="PATH" value="default"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="TABLE_NAME"/>
-      <elementValue elementRef="COLUMN" value="TABLE_NAME"/>
+      <elementValue elementRef="PATH" value="key"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="COLUMN_NAME"/>
-      <elementValue elementRef="COLUMN" value="COLUMN_NAME"/>
+      <elementValue elementRef="PATH" value="label"/>
+      <elementValue elementRef="COLUMN" value="TABLE_QUALIFIER"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="6"/>
-      <elementValue elementRef="PATH" value="DATA_TYPE"/>
-      <elementValue elementRef="COLUMN" value="DATA_TYPE"/>
+      <elementValue elementRef="PATH" value="length"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="7"/>
-      <elementValue elementRef="PATH" value="TYPE_NAME"/>
-      <elementValue elementRef="COLUMN" value="TYPE_NAME"/>
+      <elementValue elementRef="PATH" value="nullable"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="8"/>
-      <elementValue elementRef="PATH" value="PRECISION"/>
-      <elementValue elementRef="COLUMN" value="PRECISION"/>
+      <elementValue elementRef="PATH" value="originalDbColumnName"/>
+      <elementValue elementRef="COLUMN" value="TABLE_QUALIFIER"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="9"/>
-      <elementValue elementRef="PATH" value="LENGTH"/>
-      <elementValue elementRef="COLUMN" value="LENGTH"/>
+      <elementValue elementRef="PATH" value="originalLength"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="10"/>
-      <elementValue elementRef="PATH" value="SCALE"/>
-      <elementValue elementRef="COLUMN" value="SCALE"/>
+      <elementValue elementRef="PATH" value="pattern"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="11"/>
-      <elementValue elementRef="PATH" value="RADIX"/>
-      <elementValue elementRef="COLUMN" value="RADIX"/>
+      <elementValue elementRef="PATH" value="precision"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="12"/>
-      <elementValue elementRef="PATH" value="NULLABLE"/>
-      <elementValue elementRef="COLUMN" value="NULLABLE"/>
+      <elementValue elementRef="PATH" value="talendType"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="13"/>
-      <elementValue elementRef="PATH" value="REMARKS"/>
-      <elementValue elementRef="COLUMN" value="REMARKS"/>
+      <elementValue elementRef="PATH" value="type"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="14"/>
-      <elementValue elementRef="PATH" value="COLUMN_DEF"/>
-      <elementValue elementRef="COLUMN" value="COLUMN_DEF"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="15"/>
-      <elementValue elementRef="PATH" value="SQL_DATA_TYPE"/>
-      <elementValue elementRef="COLUMN" value="SQL_DATA_TYPE"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="16"/>
-      <elementValue elementRef="PATH" value="SQL_DATETIME_SUB"/>
-      <elementValue elementRef="COLUMN" value="SQL_DATETIME_SUB"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="17"/>
-      <elementValue elementRef="PATH" value="CHAR_OCTET_LENGTH"/>
-      <elementValue elementRef="COLUMN" value="CHAR_OCTET_LENGTH"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="18"/>
-      <elementValue elementRef="PATH" value="ORDINAL_POSITION"/>
-      <elementValue elementRef="COLUMN" value="ORDINAL_POSITION"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="19"/>
-      <elementValue elementRef="PATH" value="IS_NULLABLE"/>
-      <elementValue elementRef="COLUMN" value="IS_NULLABLE"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="20"/>
-      <elementValue elementRef="PATH" value="SS_DATA_TYPE"/>
-      <elementValue elementRef="COLUMN" value="SS_DATA_TYPE"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="21"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="MERGE" value="false"/>
@@ -525,13 +490,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ef046eb-1cfc-48ab-9a2c-7162011ba143"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pZGKnQuf3UUTlqSGRpbcckuOXEpxei9BDfuW10ZAVKbGYlf9n5wNOPQ6yD4OEI8YE4MTpO2GExP0
-/eimBJpKiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d52f4790-59cf-4779-aaf9-cfd0d8bf397c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U36PTDWDoHrpJsaK6iiw2Zvz46g81ih94zui5hr3/FdchRU6QRiCjV9kEw3fWx0jqQvRNzu4sXCA
-ZkdwFst2Cw==</DigestValue></Reference></SignedInfo><SignatureValue>DzdJewP/fQl1GS2yNcdr8JQG4fL6V1dFNe9hYPtsYHfKvXsBRdcpsdChkO2QutmRj88Gv0Kmb4Qr
-zolS3etQvQ768GycFg2WCqaRhxmZxd5xxvyjjueOMpteEpAuc+hH9P+Bth0kW1tLgnhf5Zw0LWTm
-C7NIsoTB+nPFMJ6lOm29ukfTpxsRmSa2rq5hyU9dkyB0dJuPP0cP9bCY74SYOF7q0+yFDc7KPaxo
-M4AmRRWxF8JKuvs7PYgooaLh2VFnt8PvqWMPKEupjUCZyRLTWis7C21cQZ8npyQ812+nuhIkQkun
-+NGlmffG9BPTHGyJ2cJoXc5MVi900BXUm14ebQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5c89527c-5b08-4311-aad1-a6328c204a71"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VSVLJ1iua91eMjdl7CxQsbe1wCwRlox8/DDgpP8Xt75bn7tTzM3E+DoWj404ip0z9CObjGFg8zfL
+dKAaWWgHQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9371d51a-8213-427e-9ffb-e6c7be0afbfb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9TO1ztA8d5kE+kTuUyFvjNZkV3SjmU1kLG/aIdohgtcNwJFk/iwVmYcsLRjHBT+ot/xLXeOGJNPf
+SIu9Oe4C4g==</DigestValue></Reference></SignedInfo><SignatureValue>cxkqAY+nHRbRGFMBEqpsDjC3I7/LLPICUdmAWwrGc0euFvDzAqjawWsvNLKVWFEunC8vuk+HksIL
+7DtH3zjr3y4IG3vtE7nCcxyS30QOKV+afZ52RXEYk9qYjVs9euU2C8Dtaqg+yQbj4AzhRXY5dJer
+Lt3xl787v4DVyWzoWIe2iq17Hu6DMdLgjqawsy63+eZ+jbCVyQb9Cg1NFzEpANXhxZANomg3MDGn
+zCXT4omUODZSjunsE+qk17b2Xgf6Zp7T9ewQvlEYJTieTaMcGOxD39L/9iKpJ6R1Y7iVg+aqYsc3
+URwJJO/atWjV//FxqVsxWMfmtAVBWeaePwSCsA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -553,4 +518,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d52f4790-59cf-4779-aaf9-cfd0d8bf397c" Target="#_5ef046eb-1cfc-48ab-9a2c-7162011ba143"><Timestamp>2020-10-04 23:55:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9371d51a-8213-427e-9ffb-e6c7be0afbfb" Target="#_5c89527c-5b08-4311-aad1-a6328c204a71"><Timestamp>2020-10-05 00:05:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
