@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="Symmetrics_Database" prompt="Symmetrics_Database?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_db"/>
     <contextParameter comment="" name="Symmetrics_AdditionalParams" prompt="Symmetrics_AdditionalParams?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value=""/>
@@ -6,7 +6,7 @@
     <contextParameter comment="" name="Symmetrics_Server" prompt="Symmetrics_Server?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="PABETTELSQL01.sequentialtech.net"/>
     <contextParameter comment="" name="Symmetrics_Login" prompt="Symmetrics_Login?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="nvision_reports"/>
     <contextParameter comment="" name="Symmetrics_Schema" prompt="Symmetrics_Schema?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_String" value="dbo"/>
-    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:s2XpaqA44Vo92jj4TnsAA8w4BR1kxfnEmU3ilRtyL9RffIYdYoIEIBow"/>
+    <contextParameter comment="" name="Symmetrics_Password" prompt="Symmetrics_Password?" promptNeeded="false" repositoryContextId="_8YyC4PYiEeqtjN2rL2UENA" type="id_Password" value="enc:system.encryption.key.v1:GEKAIfdOLkzViYAyYJRN202VccDLsOVw4JTRMpvOT8I7zEWM516NVHEa"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PdPFnB1zmLrsEtmxDerBFD7QGhEyOf13T20Lmzf5"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:uYpsWcYa2BmoZTigvIVr7XjItGHMED5NTC0YQODF"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XjXnFWAltYo7/Zho+8q8GuA09xtlJYokrsEw391g"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w8PvvuzQ0z7zS0i/7MmjbrmsQHP9dftJFD5jiMRw"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -152,7 +152,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.Symmetrics_Database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.Symmetrics_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6PkR9AW+qX+xw+suM+QQMnkPUosYmrfpS6hZqO8/l1/mAQ0ke8UuEW2sdUEuke8YpkmRl+sdSw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mIjXoC8sNGuJWAX36I7cMghnUWFTcDmypC5uEuWa9pYdDniNg+EGw1G28/Z9khWKMRN5HM18qQ=="/>
     <elementParameter field="TEXT" name="SP_NAME" value="&quot;sp_columns&quot;"/>
     <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RETURN" show="false" value="name"/>
@@ -268,11 +268,75 @@
       <column comment="" key="false" length="-1" name="SS_DATA_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAdvancedFileOutputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="output">
+      <column comment="" key="false" length="0" name="comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_default" nullable="true" originalDbColumnName="default" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="label" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="length" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="nullable" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="originalDbColumnName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="originalLength" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="pattern" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="precision" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="talendType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
+        <nodes name="TABLE_QUALIFIER" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_String" xpath="row4/TABLE_QUALIFIER"/>
+        <nodes name="TABLE_OWNER" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="row4/TABLE_OWNER"/>
+        <nodes name="TABLE_NAME" outgoingConnections="//@node.4/@nodeData/@connections.2" type="id_String" xpath="row4/TABLE_NAME"/>
+        <nodes name="COLUMN_NAME" type="id_String" xpath="row4/COLUMN_NAME"/>
+        <nodes name="DATA_TYPE" type="id_String" xpath="row4/DATA_TYPE"/>
+        <nodes name="TYPE_NAME" type="id_String" xpath="row4/TYPE_NAME"/>
+        <nodes name="PRECISION" type="id_String" xpath="row4/PRECISION"/>
+        <nodes name="LENGTH" type="id_String" xpath="row4/LENGTH"/>
+        <nodes name="SCALE" type="id_String" xpath="row4/SCALE"/>
+        <nodes name="RADIX" type="id_String" xpath="row4/RADIX"/>
+        <nodes name="NULLABLE" type="id_String" xpath="row4/NULLABLE"/>
+        <nodes name="REMARKS" type="id_String" xpath="row4/REMARKS"/>
+        <nodes name="COLUMN_DEF" type="id_String" xpath="row4/COLUMN_DEF"/>
+        <nodes name="SQL_DATA_TYPE" type="id_String" xpath="row4/SQL_DATA_TYPE"/>
+        <nodes name="SQL_DATETIME_SUB" type="id_String" xpath="row4/SQL_DATETIME_SUB"/>
+        <nodes name="CHAR_OCTET_LENGTH" type="id_String" xpath="row4/CHAR_OCTET_LENGTH"/>
+        <nodes name="ORDINAL_POSITION" type="id_String" xpath="row4/ORDINAL_POSITION"/>
+        <nodes name="IS_NULLABLE" type="id_String" xpath="row4/IS_NULLABLE"/>
+        <nodes name="SS_DATA_TYPE" type="id_String" xpath="row4/SS_DATA_TYPE"/>
+      </inputTrees>
+      <outputTrees name="output">
+        <nodes name="comment" type="id_String" xpath="output/comment"/>
+        <nodes name="_default" type="id_String" xpath="output/_default"/>
+        <nodes name="key" type="id_Boolean" xpath="output/key"/>
+        <nodes expression="row4.TABLE_QUALIFIER row4.TABLE_OWNER row4.TABLE_NAME" incomingConnections="//@node.4/@nodeData/@connections.0 //@node.4/@nodeData/@connections.1 //@node.4/@nodeData/@connections.2" name="label" type="id_String" xpath="output/label"/>
+        <nodes name="length" type="id_Integer" xpath="output/length"/>
+        <nodes name="nullable" type="id_Boolean" xpath="output/nullable"/>
+        <nodes name="originalDbColumnName" type="id_String" xpath="output/originalDbColumnName"/>
+        <nodes name="originalLength" type="id_Integer" xpath="output/originalLength"/>
+        <nodes name="pattern" type="id_String" xpath="output/pattern"/>
+        <nodes name="precision" type="id_Integer" xpath="output/precision"/>
+        <nodes name="talendType" type="id_String" xpath="output/talendType"/>
+        <nodes name="type" type="id_String" xpath="output/type"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.2" target="//@node.4/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tAdvancedFileOutputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAdvancedFileOutputXML_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iet-wAajEeuea8p0P36swQ"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/mkapustic/Desktop/out3.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/mkapustic/Desktop/out4.xml&quot;"/>
     <elementParameter field="TABLE" name="ROOT" show="false">
       <elementValue elementRef="PATH" value="/schema"/>
       <elementValue elementRef="COLUMN" value=""/>
@@ -286,69 +350,71 @@
       <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="ORDER" value="1"/>
       <elementValue elementRef="PATH" value="comment"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="COLUMN" value="comment"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="attri"/>
+      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="default"/>
+      <elementValue elementRef="COLUMN" value="default"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="default"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="key"/>
+      <elementValue elementRef="COLUMN" value="key"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="key"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="label"/>
+      <elementValue elementRef="COLUMN" value="label"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="label"/>
-      <elementValue elementRef="COLUMN" value="TABLE_QUALIFIER"/>
+      <elementValue elementRef="PATH" value="length"/>
+      <elementValue elementRef="COLUMN" value="length"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="6"/>
-      <elementValue elementRef="PATH" value="length"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="nullable"/>
+      <elementValue elementRef="COLUMN" value="nullable"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="7"/>
-      <elementValue elementRef="PATH" value="nullable"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="originalDbColumnName"/>
+      <elementValue elementRef="COLUMN" value="originalDbColumnName"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="8"/>
-      <elementValue elementRef="PATH" value="originalDbColumnName"/>
-      <elementValue elementRef="COLUMN" value="TABLE_QUALIFIER"/>
+      <elementValue elementRef="PATH" value="originalLength"/>
+      <elementValue elementRef="COLUMN" value="originalLength"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="9"/>
-      <elementValue elementRef="PATH" value="originalLength"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="pattern"/>
+      <elementValue elementRef="COLUMN" value="pattern"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="10"/>
-      <elementValue elementRef="PATH" value="pattern"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="precision"/>
+      <elementValue elementRef="COLUMN" value="precision"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="11"/>
-      <elementValue elementRef="PATH" value="precision"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="talendType"/>
+      <elementValue elementRef="COLUMN" value="talendType"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="12"/>
-      <elementValue elementRef="PATH" value="talendType"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="PATH" value="type"/>
+      <elementValue elementRef="COLUMN" value="type"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="13"/>
-      <elementValue elementRef="PATH" value="type"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="14"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_iet-wAajEeuea8p0P36swQ - metadata"/>
     <elementParameter field="CHECK" name="MERGE" value="false"/>
     <elementParameter field="CHECK" name="PRETTY_COMPACT" value="false"/>
     <elementParameter field="CHECK" name="FILE_VALID" value="false"/>
@@ -364,39 +430,33 @@
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
     <elementParameter field="CHECK" name="ADD_EMPTY_ATTRIBUTE" value="false"/>
-    <elementParameter field="CHECK" name="ADD_UNMAPPED_ATTRIBUTE" value="true"/>
+    <elementParameter field="CHECK" name="ADD_UNMAPPED_ATTRIBUTE" value="false"/>
     <elementParameter field="CHECK" name="ADD_DOCUMENT_AS_NODE" value="false"/>
     <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="XMLNODE_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="trial"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tAdvancedFileOutputXML_1">
-      <column comment="" key="false" length="-1" name="TABLE_QUALIFIER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TABLE_OWNER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TABLE_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="COLUMN_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DATA_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TYPE_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRECISION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LENGTH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SCALE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RADIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NULLABLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REMARKS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="COLUMN_DEF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SQL_DATA_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SQL_DATETIME_SUB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CHAR_OCTET_LENGTH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORDINAL_POSITION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IS_NULLABLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SS_DATA_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tAdvancedFileOutputXML_1">
+      <column comment="" key="false" length="0" name="comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_default" nullable="true" originalDbColumnName="default" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="label" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="length" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="nullable" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="originalDbColumnName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="originalLength" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="pattern" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="precision" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="talendType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tDBSP_1">
@@ -481,22 +541,26 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tAdvancedFileOutputXML_1">
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tParseRecordSet_1" offsetLabelX="0" offsetLabelY="0" source="tParseRecordSet_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tAdvancedFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5c5be643-17b8-4777-b444-3ba1b53bb3d2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mXV1wnrinAPl+Abau2A5G4m2J2eeN4BbEwxFQkJCrDa/RVhIxwdeu7QwKlQK4+icanFY2DcyrHRo
-bpDVpPiw/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a718c550-e08c-4da7-bdea-1092858054c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8DyCqv9H7BKPxopzizHvlwpZ3dAVp6bRwnwMWc09Q9anp/Ny4HyvO4luYXZFpphz0JPiw4Lvvxwb
-jabWqbi9IQ==</DigestValue></Reference></SignedInfo><SignatureValue>KHj6r/GFR5FhooJB8zIGspjICJiw6vvurwniOltbLOxpm/7ro1uHemGM6g/mDVbAZXA7yWtZP/sF
-d4Yvl2O26wB0ASBWT3irBRXT/yMo3R3pBdPYA2fFcyDG1S+m9pxsKmr3/usPorh0F74dHVYEPTAy
-gYIo9trr3fzJMbYb56DJXqZVOANtRb/wkCobKuLyRhgxofVW6Padq7jRuOVl4BAICH1meDX3wz9r
-TVSEeJ5+ii95Hlye+DfwnAM+/0/T2O1MF19H4t/mL7ALrx8Rle/JQEdFq7qWqPEgkg8j6ipbB6tG
-jb/Kk3lDfOJNRc854uykk3w1XKTJwFu9uIoROA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7ada8931-b476-4ba7-a231-4989d9f0a1f1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NfeaD6FSyHvidVq8s666T1sSHKow/vpfgPMs7qcOPWLqSIavrTItP4+OVfG0jyUuj93P1JDQ0QV6
+euc75jgzDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5c10120b-10d0-4633-a249-abd05419e6e8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+UMnYDG7tRSOjGXOTlZpQVYllR5lM8BudyjGueACAtLivirJI4MNue2kC1p7DT260R9C2VNQdvr9
+/BzxKcDSpQ==</DigestValue></Reference></SignedInfo><SignatureValue>POHhh+Momgq0uqoGcYkUn0swIfLJTt+PYsr4dkmCyHCRSlOgvdP5v72yYfduj7wWz/i9t0zoutv8
++XN3VebtjRs74CqzPZ6WlNcWzbBDC+nNDPm8OqQ93W/yni0tJwTxjQKGlK3HK6MbFfIK2P7qN7v+
+6ANzR27D8jWSMfcS1o5szqYYC/0gb+p2LrGqJKbUyLjZFS5upJ3R0QPdPl1g3xDC7brK536zgWJv
+1ipDXdHZxfbSlMF5rOkyZ2fYH/XxMEc8L20fSiVWfRsYj1oeH9aPEd+JqMyZtuvuQMUptIaY0PEI
+RIfoqpCkahm3m9lnQF6ZSOOyLBImbeeL82Wl9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -518,4 +582,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a718c550-e08c-4da7-bdea-1092858054c9" Target="#_5c5be643-17b8-4777-b444-3ba1b53bb3d2"><Timestamp>2020-10-05 00:13:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5c10120b-10d0-4633-a249-abd05419e6e8" Target="#_7ada8931-b476-4ba7-a231-4989d9f0a1f1"><Timestamp>2020-10-05 01:08:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
