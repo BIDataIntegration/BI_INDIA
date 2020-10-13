@@ -5,13 +5,13 @@
     <contextParameter comment="" name="src_port" prompt="src_port?" promptNeeded="false" type="id_String" value="&quot;50001&quot;"/>
     <contextParameter comment="" name="src_schema" prompt="src_schema?" promptNeeded="false" type="id_String" value="&quot;root&quot;"/>
     <contextParameter comment="" name="src_uid" prompt="src_uid?" promptNeeded="false" type="id_String" value="&quot;BIreport&quot;"/>
-    <contextParameter comment="" name="src_pwd" prompt="src_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:hFBpSRPCdT7GICCTa5OsmaaILJ1P5n1SazkuIIu/4/KeudxR"/>
+    <contextParameter comment="" name="src_pwd" prompt="src_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:pfwjlm4BwcZ7S+L0tpfLAn4lp3jCZxRJVJITnecTi/MRe3/Z"/>
     <contextParameter comment="" name="des_dbnm" prompt="des_dbnm?" promptNeeded="false" type="id_String" value="&quot;IMPORT-AVAYA&quot;"/>
     <contextParameter comment="" name="des_host" prompt="des_host?" promptNeeded="false" type="id_String" value="&quot;USPA01BIPD01&quot;"/>
     <contextParameter comment="" name="des_port" prompt="des_port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
     <contextParameter comment="" name="des_schema" prompt="des_schema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
     <contextParameter comment="" name="des_uid" prompt="des_uid?" promptNeeded="false" type="id_String" value="&quot;TL2020&quot;"/>
-    <contextParameter comment="" name="des_pwd" prompt="des_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:zsLrOC4PZUeE1py81OnAmMIjR+h3e2DdU7R55QcddS0GVUa2FA6/X34="/>
+    <contextParameter comment="" name="des_pwd" prompt="des_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:0e3MYJZz2003IHQ4rOUspMca3BD+EikOJMXMsf6y4ec+IFhHhG9dUN4="/>
     <contextParameter comment="" name="scr_instance" prompt="scr_instance?" promptNeeded="false" type="id_String" value="&quot;cms_PABETVCMS01&quot;"/>
   </context>
   <context confirmationNeeded="false" name="Prod">
@@ -35,13 +35,13 @@
     <contextParameter comment="" name="src_port" prompt="src_port?" promptNeeded="false" type="id_String" value="&quot;50001&quot;"/>
     <contextParameter comment="" name="src_schema" prompt="src_schema?" promptNeeded="false" type="id_String" value="&quot;root&quot;"/>
     <contextParameter comment="" name="src_uid" prompt="src_uid?" promptNeeded="false" type="id_String" value="&quot;BIreport&quot;"/>
-    <contextParameter comment="" name="src_pwd" prompt="src_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:R6y82SKBRMquKszm6bEzxmxQgM23PzNsrhfwtAYwh9N7fiQu"/>
+    <contextParameter comment="" name="src_pwd" prompt="src_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:gqwWkBhqQg2dFz5W8GEiBfLFkXWeYOoUnyb10y6N/ZJPaHVk"/>
     <contextParameter comment="" name="des_dbnm" prompt="des_dbnm?" promptNeeded="false" type="id_String" value="&quot;IMPORT-AVAYA&quot;"/>
     <contextParameter comment="" name="des_host" prompt="des_host?" promptNeeded="false" type="id_String" value="&quot;USPA01BIPD01&quot;"/>
     <contextParameter comment="" name="des_port" prompt="des_port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
     <contextParameter comment="" name="des_schema" prompt="des_schema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
     <contextParameter comment="" name="des_uid" prompt="des_uid?" promptNeeded="false" type="id_String" value="&quot;TL2020&quot;"/>
-    <contextParameter comment="" name="des_pwd" prompt="des_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:NUU8BNUNfPeRCf2GiINCNVXEUmwE8BNQki+lRpjc17CC/ud8ijJGGbI="/>
+    <contextParameter comment="" name="des_pwd" prompt="des_pwd?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:fj5w7jI4tJpGJ9HyMZ5+XSZoVe4XYxbWU1gS5g5DpgPfy1YAmRj6Ias="/>
     <contextParameter comment="" name="scr_instance" prompt="scr_instance?" promptNeeded="false" type="id_String" value="&quot;cms_PABETVCMS01&quot;"/>
   </context>
   <context confirmationNeeded="false" name="UAT">
@@ -103,7 +103,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:M4Ju5gl6uhDVIKMg1lIIJBkuBQl31xBXivL0hncX"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Kkr1uv7b9SWIVQ8gm/VOS348ltVJF/bj9QDGyfMN"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -118,7 +118,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/mkapustic/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Studio-20200219_1130-V7.3.1/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -138,7 +138,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/pIxBVVd0vutbGW3EcZz6T453QOgw60HecRovsNj"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nzxWqrHX6P8JD02wptLD7JWzhfgZyAwi3FQnBcCY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -185,7 +185,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.src_dbnm"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.src_schema"/>
     <elementParameter field="TEXT" name="USER" value="context.src_uid"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T7le/l8/Tun8iBEBpPf/DNhkHXBCwL3cuaYWvNQD/nePkodAEOHNVttUJQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:elfKkllrvrx5qfoZm0RORbgeWJcKMNRgkLEzoh0LilVITQZZ3YsSI4IWhA=="/>
     <elementParameter field="TEXT" name="DBSERVER" value="context.scr_instance"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -207,7 +207,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;STI-RAW&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;TL2020&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7zGehhKTHvgOxXYrxbyyIL+ApRPb7kspYjIddmAXwe1dNQws7MRwcEejWw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AuRgKYgvogjJNQ2kTGfd62CSC7meJy1rKbT8ybEeMRtG++2KpKL1kIA7TQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -262,7 +262,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;IMPORT-AVAYA&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MuT06WtSKDCUcRRGSNTSjK2EGZ2Q+yd8WNqjCst8"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q4KPCiqcshl2/yqOa80+wg0/cs0Zi/+3fixmTY0+"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;integratedSecurity=true&quot;"/>
@@ -288,7 +288,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;cms&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;BIreport&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QG1qDfTRP6l1tKSBQBAQ6UUF3IpWX/sBUAFGLbhQKBrlH2uCIy8="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ARTi71Wgec2i28ASZWXdRzhjOBdUedLs+DNI8dYM4fblb2NQ2jk="/>
     <elementParameter field="TEXT" name="DBSERVER" show="false" value="&quot;cms_PABETVCMS01&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;hvdn&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1409,7 +1409,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;IMPORT-AVAYA&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cEuNI9h/9oinFj80yWZUI2Q4tjSfGiPCON5FwZCb"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+bSBy1U3t4EYrocCoOjVyXpAh+VN91FbH0Hgf0IM"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;hvdn&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1799,7 +1799,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i6lGaykm2f9mcnVpQCu+HWP6/au0zlvl/KbML2Df"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tN7g0HxKjbSKqWfo7/oZ4Tf46CaxADXBxJuIxf/S"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;hvdn&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2681,7 +2681,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yKQqTsCQLpabBmUpwiMFdeNt4tYY5KdaSRS9cW7a"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Cf39FvT9QckajIM1Bpo0JwjbFSnF/6vh5MVoww1m"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;hvdn&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -4968,13 +4968,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e07f5c5f-9935-4a47-ade6-25c78ebca832"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VRaXuobeIcZEtDGGMrikYUyTGeLFOrFsyw0eLYaIkYaFVlqbCDFZ8Rw5SsSs2y7cg9Agf2hu1M0L
-KjqS8BGs3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6976b3ba-6623-452e-8daa-ce757589cdfd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GJJgBV6GL/7l9yQoAoPWomacWT5YWCPvPyIapDmMOc3WlDEMkXb+avc6MQw7BK9Fth5My9sBvfaH
-vieoGvkGsA==</DigestValue></Reference></SignedInfo><SignatureValue>CwK3TdKQTOP222kTiI8UT/ixRubk/GPIG2+0p5Vxtaq8AQvDhY6zkDbzPhOYzbwPdTRzLBfjvf+j
-hKyYkiGB034BmIz7VJWk+a6ez7djEOiND1JP6bLacUbsb4d/eElLxhW/fWnZjrmmv/V8wQUWNhjl
-P4nfA2CmvY0H45sJbLGvlvQNxtr9zffjiWzE9ri4O5JejYTVlyrHJSjZucRpePiYQydB31Pi8LBE
-bBsTtayBQyLOdcS8GndlDikO6EkvJIznR/pj74tiAORka8zj5DFOQuJWBcew4po/sYZXFd0OjS4Y
-x0EnN5D6KpWTo/y91THYt211pFcY2ybKTJBSrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2161356a-d186-4e01-9dda-9b6993c7831d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BiV6t9/GZXTS5mC7SVz5XGc3bdaOSuMs5M4r6tlKkxhDa6SJ6ixJi9EYWvSPD/WeJRGXtRbYz4pj
+A+F9sFzw7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5df56260-cdd8-42d6-9f7a-ae5ec465b0d5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZNeyvgF5ahuX79A0McHB/Gyfun4IsWXCZcOoNA1YO1HiPsH0r9Y3LloyX4p3etUO8Kb01RL54ZGv
+XHc/nDs+iQ==</DigestValue></Reference></SignedInfo><SignatureValue>cS/W4dkzvsdfaKlxE2jdOS51puzgaZa9JGhZVhqvy371s9FACSwsQCzpl1vXlFpBOSf3TyZQSCi4
+wCuDxnTh3XauLsv+y2JO+n0bhMXVeBGPYzVtCmQ38sod91HB/GHns0c5KV7MAEGYeSctslWxo0kM
+tA/5DaqqDYU0heX5Zf7SUeKjqmHumId86BWirwV3UcMNDqDJFZrO9lg2WcVSGIPC49JpH0cb55St
+czwYniKzVt1G2zcrpcXD0nAUt17VYpTcHNP/EsHsgbvPYA9jZFvB0LjZ0uPwFsx2fI4D8Meo/B4K
+mgI/ibml6wuOOAG+Eel3cOIFgpNlyukkAgytlQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -4996,4 +4996,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6976b3ba-6623-452e-8daa-ce757589cdfd" Target="#_e07f5c5f-9935-4a47-ade6-25c78ebca832"><Timestamp>2020-10-13 19:23:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5df56260-cdd8-42d6-9f7a-ae5ec465b0d5" Target="#_2161356a-d186-4e01-9dda-9b6993c7831d"><Timestamp>2020-10-13 19:30:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
